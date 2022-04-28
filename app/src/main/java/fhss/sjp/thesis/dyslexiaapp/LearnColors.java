@@ -5,7 +5,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import java.util.HashMap;
@@ -46,25 +46,26 @@ public class LearnColors extends AppCompatActivity {
             }
         });
 
-        map.put("orange","Orange is found in veggies like carrot and orange fruit");
-        map.put("sky blue","Your art teacher may tell you to paint the the sky with this colour");
-        map.put("red","red is quite common, when sun sets it is red , apple is red , so are gulmohar, tomato , rose");
-        map.put("purple","purple is a color of royalty , bouganvilla flower is purple ");
-        map.put("violet", "Brinjal is violet, well dont know brinjal? , it's egg plant in America. , India has many violet flowers");
-        map.put("blue", "blue is every where , most cooling color , look above the sky is blue.");
-        map.put("indigo","indigo is darker of blue, , , ,indigo looks great on white background.");
-        map.put("green", "Green is life, the leaves that you see is green, the forest is green, the spinach , kale , lady's fingure all are green");
-        map.put("leaf green","The new born leaves , the sapling all are this shade of green" );
-        map.put("grass green", "Ever seen cricketers hitting the balls on the ground? that field is grass green");
-        map.put("yellow", "look your house hold and see how much yellow is there. Indian dishes can't be made without yellow.");
-        map.put("ochre", "well ochre is not in nature but in art, paint your grounds ochre");
-        map.put("brown","tree trunk is brown , so some wood paints , ask your parent you may have brown in your kitchen" );
-        map.put("cyan","when you mix green with blue you get cyan, Copper Sulphate is cyan, ask your mom about it.");
+        map.put("red","Red is the color that is on the outside edge of the rainbow. It is one of the three primary colors, along with blue and yellow. Red is the color of some apples and mostly, raspberries.\n" +
+                "\n" +
+                "Red is the color of some blood and the occasional cherry.\n" +
+                "\n" +
+                "It is sometimes used to mark things that are wrong, important or dangerous.\n" +
+                "\n" +
+                "Red is also commonly used as a warning to stop.");
+
+        map.put("yellow","It's the color of happiness, and optimism, of enlightenment and creativity, sunshine and spring. Lurking in the background is the dark side of yellow");
+        map.put("blue","Blue is the favorite color of all people. It's nature's color for water and sky, but is rarely found in fruits and vegetables.");
+        map.put("orange", "Orange. Orange is softer and simpler in comparison to red. It represents happiness, sociability,");
+        map.put("green", "Green stands for balance, nature, spring, and rebirth. It's the symbol of prosperity, freshness, and progress. ");
+        map.put("purple", "Purple is associated with wisdom, dignity, independence, creativity, mystery and magic. Purple is a very rare color in nature, though the lavender flower");
     }
 
     public void putColour(View v){
-        Button button = (Button) v;
-        int color = ((ColorDrawable) button.getBackground()).getColor();
+
+        ImageButton imageButton =(ImageButton) v;
+        int color = ((ColorDrawable) imageButton.getBackground()).getColor();
+
         viewColor.setBackgroundColor(color);
         colorName.setText(String.valueOf(v.getTag()).toUpperCase());
         colorName.setVisibility(View.VISIBLE);
