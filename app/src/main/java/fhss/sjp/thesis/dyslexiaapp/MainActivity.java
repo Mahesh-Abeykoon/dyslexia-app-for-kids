@@ -9,13 +9,13 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
-    Override
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
 
-    public void openLearning(View v){
+    public void openLearnScreen(View v){
         Intent intent = new Intent(this,LearnScreen.class);
         startActivity(intent);
     }
