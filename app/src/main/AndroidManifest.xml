@@ -12,6 +12,7 @@
 
 
         <activity android:name=".LearnScreen" />
+        <activity android:name=".LearnColors" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
