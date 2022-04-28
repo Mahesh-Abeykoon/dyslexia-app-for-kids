@@ -1,5 +1,7 @@
 package fhss.sjp.thesis.dyslexiaapp;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,6 +12,11 @@ public class LearnScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.learn_screen);
+    }
+
+    public void openColorsLearnScreen(View v){
+        Intent intent = new Intent(this,LearnColors.class);
+        startActivity(intent);
     }
 
 
