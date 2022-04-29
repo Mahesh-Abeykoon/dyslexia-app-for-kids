@@ -72,7 +72,7 @@ public class LearnColors extends AppCompatActivity {
         String text = String.valueOf(v.getTag());
 
         textToSpeech.setPitch(0);
-        textToSpeech.setSpeechRate(0.75f);
+        textToSpeech.setSpeechRate(0.25f);
         textToSpeech.speak(text,TextToSpeech.QUEUE_FLUSH,null   );
         textToSpeech.speak(map.get(text), TextToSpeech.QUEUE_ADD,null);
     }
