@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LearnColors">
+    tools:context=".LearnColors"
+    android:background="#95E6F1">
+
 
 
     <ImageView
@@ -20,9 +22,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.212"
         android:contentDescription="TODO"
-        android:gradientRadius="300dp"
-        android:endColor="#21235A"
-        android:startColor="#A511BF"
         android:type="radial"
         />
 
@@ -141,4 +140,58 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.648" />
+
+    <ImageButton
+        android:id="@+id/grey"
+        android:layout_width="85dp"
+        android:layout_height="93dp"
+        android:background="#777177"
+        android:onClick="putColour"
+        android:tag="grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.818" />
+
+    <ImageButton
+        android:id="@+id/pink"
+        android:layout_width="85dp"
+        android:layout_height="93dp"
+        android:background="#F64380"
+        android:onClick="putColour"
+        android:tag="pink"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.168"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.818" />
+
+    <ImageButton
+        android:id="@+id/black"
+        android:layout_width="85dp"
+        android:layout_height="93dp"
+        android:background="#000000"
+        android:onClick="putColour"
+        android:tag="black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.831"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.818" />
+
+    <ImageButton
+        android:id="@+id/white"
+        android:layout_width="247dp"
+        android:layout_height="46dp"
+        android:background="#FFFFFF"
+        android:onClick="putColour"
+        android:tag="white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.925" />
 </androidx.constraintlayout.widget.ConstraintLayout>

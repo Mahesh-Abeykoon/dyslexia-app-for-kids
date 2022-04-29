@@ -59,6 +59,11 @@ public class LearnColors extends AppCompatActivity {
         map.put("orange", "Orange. Orange is softer and simpler in comparison to red. It represents happiness, sociability,");
         map.put("green", "Green stands for balance, nature, spring, and rebirth. It's the symbol of prosperity, freshness, and progress. ");
         map.put("purple", "Purple is associated with wisdom, dignity, independence, creativity, mystery and magic. Purple is a very rare color in nature, though the lavender flower");
+        map.put("pink","The color pink, for example, is thought to be a calming color associated with love, kindness, and femininity. ");
+        map.put("gray","Gray is the color of an elephant, cement, pencil writing, and rainy clouds");
+        map.put("black","Many fashion retailers have used black in their logos. Black is also a popular color for text as it's an easy color to read.");
+        map.put("white"," White is the lightest color and is achromatic. It is the color of objects such as Snow, chalk, and Milk");
+
     }
 
     public void putColour(View v){
