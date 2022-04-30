@@ -11,6 +11,7 @@
         android:theme="@style/Theme.DyslexiaApp" >
 
 
+        <activity android:name=".learningmenu.LearnAlphabet" />
         <activity android:name=".LearnScreen" />
         <activity android:name=".learningmenu.LearnColors" />
         <activity
