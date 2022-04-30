@@ -1,4 +1,4 @@
-package fhss.sjp.thesis.dyslexiaapp;
+package fhss.sjp.thesis.dyslexiaapp.learningmenu;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.drawable.ColorDrawable;
@@ -11,6 +11,8 @@ import android.widget.TextView;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
+
+import fhss.sjp.thesis.dyslexiaapp.R;
 
 public class LearnColors extends AppCompatActivity {
 

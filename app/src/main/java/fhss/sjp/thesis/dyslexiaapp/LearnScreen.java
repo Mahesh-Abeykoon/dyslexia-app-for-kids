@@ -6,6 +6,8 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import fhss.sjp.thesis.dyslexiaapp.learningmenu.LearnColors;
+
 public class LearnScreen extends AppCompatActivity {
 
     @Override
@@ -15,7 +17,7 @@ public class LearnScreen extends AppCompatActivity {
     }
 
     public void openColorsLearnScreen(View v){
-        Intent intent = new Intent(this,LearnColors.class);
+        Intent intent = new Intent(this, LearnColors.class);
         startActivity(intent);
     }
 
