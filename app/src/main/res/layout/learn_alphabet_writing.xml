@@ -15,13 +15,13 @@
         android:background="@drawable/roundbutton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.434"
+        app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.048"
+        app:layout_constraintVertical_bias="0.031"
         app:layout_constraintVertical_weight="5" />
 
     <Button
@@ -35,7 +35,7 @@
         android:onClick="showLetterAnimation"
         android:radius="10dp"
         android:text="a"
-        android:textSize="34sp"
+        android:textSize="30sp"
         android:fontFamily="@font/dyslexia"
         android:textAppearance="@style/TextAppearance.AppCompat.Small"
 
@@ -58,7 +58,7 @@
         android:text="b"
         android:textAppearance="@style/TextAppearance.AppCompat.Small"
         android:textColor="#F8F4F4"
-        android:textSize="34sp"
+        android:textSize="30sp"
         android:fontFamily="@font/dyslexia"
         app:layout_constraintBottom_toTopOf="@+id/buttonH"
         app:layout_constraintEnd_toStartOf="@+id/buttonC"
@@ -79,7 +79,7 @@
         android:text="c"
         android:textAppearance="@style/TextAppearance.AppCompat.Small"
         android:textColor="#FAF6F6"
-        android:textSize="34sp"
+        android:textSize="30sp"
         android:fontFamily="@font/dyslexia"
         app:layout_constraintBottom_toTopOf="@+id/buttonI"
         app:layout_constraintEnd_toStartOf="@+id/buttonD"
