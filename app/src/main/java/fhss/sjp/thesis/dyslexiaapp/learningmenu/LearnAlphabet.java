@@ -1,4 +1,5 @@
 package fhss.sjp.thesis.dyslexiaapp.learningmenu;
+import fhss.sjp.thesis.dyslexiaapp.R;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -71,7 +72,7 @@ public class LearnAlphabet extends AppCompatActivity {
 
         buttons.add( (Button) findViewById(R.id.buttonY));
         buttons.add( (Button) findViewById(R.id.buttonZ));
-        buttons.add( (Button) findViewById(R.id.button28));
+        //buttons.add( (Button) findViewById(R.id.button28));
 
         capsButton = (ImageButton) findViewById(R.id.capsButton2) ;
         toggleNumeric =  (ImageButton) findViewById(R.id.toggleNumeric2);
@@ -137,7 +138,7 @@ public class LearnAlphabet extends AppCompatActivity {
     }
 
     public void capsUp(View v){
-        for (int i = 0; i<=26; i++){
+        for (int i = 0; i < 26; i++){
             String str = (String) buttons.get(i).getText();
             if(!capsed)
                 buttons.get(i).setText(str.toUpperCase());
