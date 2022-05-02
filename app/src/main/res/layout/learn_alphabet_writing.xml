@@ -375,7 +375,7 @@
         android:text="q"
         android:textAppearance="@style/TextAppearance.AppCompat.Small"
         android:textColor="#673AB7"
-        android:textSize="30sp"
+        android:textSize="28sp"
         android:fontFamily="@font/dyslexia"
         app:layout_constraintBottom_toTopOf="@+id/buttonW"
         app:layout_constraintEnd_toStartOf="@+id/buttonR"
