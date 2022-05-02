@@ -508,7 +508,7 @@
         android:text="w"
         android:textAppearance="@style/TextAppearance.AppCompat.Small"
         android:textColor="#3C3737"
-        android:textSize="22sp"
+        android:textSize="21sp"
         android:fontFamily="@font/dyslexia"
         app:layout_constraintBottom_toTopOf="@+id/btn_speak2"
         app:layout_constraintEnd_toStartOf="@+id/buttonX"
