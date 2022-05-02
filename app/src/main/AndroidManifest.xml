@@ -13,6 +13,7 @@
 
         <activity android:name=".learningmenu.LearnAlphabetWriting" />
         <activity android:name=".learningmenu.LearnAlphabet" />
+        <activity android:name=".TestScreen" />
         <activity android:name=".LearnScreen" />
         <activity android:name=".learningmenu.LearnColors" />
         <activity
