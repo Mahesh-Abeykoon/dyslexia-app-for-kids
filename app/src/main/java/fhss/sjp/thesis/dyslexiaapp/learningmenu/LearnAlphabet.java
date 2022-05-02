@@ -120,7 +120,7 @@ public class LearnAlphabet extends AppCompatActivity {
 
             String spoken_words = String.valueOf(matches.get(0));
 
-            String text = Global.parseSpokenWordsToWord(spoken_words,alphas+"1234567890");
+            String text = Function.parseSpokenWordsToWord(spoken_words,alphas+"1234567890");
 
             textView.setText(textView.getText()+text);
             tts.speak(text,TextToSpeech.QUEUE_ADD,null);
