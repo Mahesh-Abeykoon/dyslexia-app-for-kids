@@ -123,7 +123,7 @@ public class LearnAlphabetWriting extends AppCompatActivity {
             res="number"+res;
         }
 
-        Global.showLetterAnimation(res,imageView3,getApplicationContext());
+        Function.showLetterAnimation(res,imageView3,getApplicationContext());
         tts.speak(text,TextToSpeech.QUEUE_ADD, null  );
 
 
@@ -169,7 +169,7 @@ public class LearnAlphabetWriting extends AppCompatActivity {
 
             String speech;
 
-            String text = Global.parseSpokenWordsToWord(spoken_words, alphas);
+            String text = Function.parseSpokenWordsToWord(spoken_words, alphas);
 
 
 
@@ -180,7 +180,7 @@ public class LearnAlphabetWriting extends AppCompatActivity {
                 text = String.valueOf(text.charAt(0));
                 speech = text;
 
-                if(Global.isNumeric(text)){
+                if(Function.isNumeric(text)){
                     text = "number"+text;
 
                 }else {
