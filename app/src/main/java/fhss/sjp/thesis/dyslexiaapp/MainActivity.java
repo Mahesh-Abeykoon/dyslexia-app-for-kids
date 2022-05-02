@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openTestScreen(View v){
-        System.out.println("Test Screen");
+        Intent intent = new Intent(this,TestScreen.class);
+        startActivity(intent);
     }
 }
