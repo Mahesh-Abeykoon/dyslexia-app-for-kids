@@ -1,4 +1,5 @@
 package fhss.sjp.thesis.dyslexiaapp.learningmenu;
+import fhss.sjp.thesis.dyslexiaapp.Function;
 import fhss.sjp.thesis.dyslexiaapp.R;
 
 import androidx.appcompat.app.AppCompatActivity;

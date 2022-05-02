@@ -1,4 +1,4 @@
-package fhss.sjp.thesis.dyslexiaapp.learningmenu;
+package fhss.sjp.thesis.dyslexiaapp;
 
 
 import android.content.Context;
