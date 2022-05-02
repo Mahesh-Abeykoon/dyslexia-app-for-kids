@@ -5,9 +5,6 @@ import android.content.Context;
 import android.widget.Button;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Random;
 import pl.droidsonroids.gif.GifImageView;
 
 public class Global {
