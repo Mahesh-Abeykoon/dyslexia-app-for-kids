@@ -65,8 +65,8 @@
         android:background="@drawable/roundbutton"
         android:backgroundTint="@color/colorMediumDark"
         android:onClick="checkAnswer"
-
         android:text="Button"
+        android:fontFamily="@font/dyslexia"
         android:textColor="@color/colorAccent"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
