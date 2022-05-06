@@ -122,9 +122,10 @@ public class Function {
 
         }
 
+        //response for image identity buttons
         public static String responseOnReply(boolean quality){
-            String[] positive_text = {"Fantastic","Correct","You are Right", "Great","Going good","Excellent"};
-            String[] negative_text ={"Oops","Incorrect","wrong","think again"};
+            String[] positive_text = {"Oh Fantastic","It's correct","You are Right", "Great","You're Excellent"};
+            String[] negative_text ={"It's incorrect","No it's wrong","Try again"};
             Random rand = new Random();
             int len;
             if (quality){
@@ -134,12 +135,9 @@ public class Function {
             else{
                 len=negative_text.length;
                 return negative_text[rand.nextInt(len-1)];
-
             }
-
         }
 
-        
 
         public static void enableDisableButton(ArrayList<Button> buttons, boolean status){
 
