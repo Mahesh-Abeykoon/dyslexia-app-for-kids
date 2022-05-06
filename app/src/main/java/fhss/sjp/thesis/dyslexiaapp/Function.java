@@ -123,17 +123,17 @@ public class Function {
         }
 
         public static String responseOnReply(boolean quality){
-            String[] pos_text = {"Fantastic","Correct","You are Right", "Great","Going good","Excellent"};
-            String[] neg_text ={"Oops","Incorrect","wrong","think again"};
+            String[] positive_text = {"Fantastic","Correct","You are Right", "Great","Going good","Excellent"};
+            String[] negative_text ={"Oops","Incorrect","wrong","think again"};
             Random rand = new Random();
             int len;
             if (quality){
-                len = pos_text.length;
-                return pos_text[rand.nextInt(len-1)];
+                len = positive_text.length;
+                return positive_text[rand.nextInt(len-1)];
             }
             else{
-                len=neg_text.length;
-                return neg_text[rand.nextInt(len-1)];
+                len=negative_text.length;
+                return negative_text[rand.nextInt(len-1)];
 
             }
 

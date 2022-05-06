@@ -18,5 +18,6 @@ public class TestScreen extends AppCompatActivity {
     public void openImageIdentifyScreen(View v){
         Intent intent = new Intent(this, ImageIdentify.class);
         startActivity(intent);
+
     }
 }
