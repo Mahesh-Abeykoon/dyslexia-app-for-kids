@@ -139,33 +139,7 @@ public class Function {
 
         }
 
-        public static boolean voiceReplyChecker(String checker, String value){
-            Map map = new HashMap();
-            map.put("kangaroo","kangaru");
-            map.put("cheetah","chita,chitah,cheetah,cita,ceeta,cheater");
-            map.put("siuli","shivli,shiuli,siuli");
-
-            if(map.containsKey(checker)){
-                String[] val = String.valueOf(map.get(checker)).split(",");
-
-                for(String item : val){
-                    if(value.contains(item)){
-                        return true;
-                    }
-
-                }
-                return false;
-            }
-            else{
-                if(value.contains(checker)){
-                    return true;
-                }
-                else{
-                    return false;
-                }
-            }
-
-        }
+        
 
         public static void enableDisableButton(ArrayList<Button> buttons, boolean status){
 
