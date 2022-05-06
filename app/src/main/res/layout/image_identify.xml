@@ -15,7 +15,7 @@
         android:layout_marginEnd="8dp"
         android:text="TRY TO IDENTIFY"
         android:textSize="24sp"
-        android:fontFamily="@font/dyslexia"        
+        android:fontFamily="@font/dyslexia"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -48,6 +48,7 @@
         android:backgroundTint="@color/colorMediumDark"
         android:onClick="checkAnswer"
         android:text="Button"
+        android:fontFamily="@font/dyslexia"
         android:textColor="@color/colorAccent"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
