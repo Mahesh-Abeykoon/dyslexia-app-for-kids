@@ -225,14 +225,7 @@ public class ImageIdentify extends AppCompatActivity {
 
 
             String spoken_words = matches.get(0).toString().toLowerCase();
-
-
-            if(Function.voiceReplyChecker(correct_ans.toLowerCase(),spoken_words)){
-                tts.speak(Function.responseOnReply(true), TextToSpeech.QUEUE_FLUSH, null);
-            }
-            else{
-                tts.speak(Function.responseOnReply(false), TextToSpeech.QUEUE_FLUSH, null);
-            }
+            
 
         }
     }
