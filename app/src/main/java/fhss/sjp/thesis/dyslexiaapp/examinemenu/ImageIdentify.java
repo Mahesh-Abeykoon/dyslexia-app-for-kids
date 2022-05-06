@@ -1,8 +1,5 @@
 package fhss.sjp.thesis.dyslexiaapp.examinemenu;
 
-
-
-
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -74,7 +71,6 @@ public class ImageIdentify extends AppCompatActivity {
                 }
             }
         });
-
 
         optionButtons.add((Button) findViewById(R.id.button27));
         optionButtons.add((Button) findViewById(R.id.button28));
@@ -163,7 +159,6 @@ public class ImageIdentify extends AppCompatActivity {
 
     }
 
-
     public void checkAnswer(View v){
 
         Button replied = (Button) v;
@@ -225,7 +220,7 @@ public class ImageIdentify extends AppCompatActivity {
 
 
             String spoken_words = matches.get(0).toString().toLowerCase();
-            
+
 
         }
     }
