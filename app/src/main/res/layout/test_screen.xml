@@ -38,6 +38,7 @@
 
     <ImageButton
             android:id="@+id/imageView2"
+            android:onClick="openLetterIdentifyScreen"
             android:layout_width="120dp"
             android:layout_height="141dp"
             app:layout_constraintBottom_toBottomOf="parent"
