@@ -6,6 +6,7 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 import fhss.sjp.thesis.dyslexiaapp.examinemenu.ImageIdentify;
+import fhss.sjp.thesis.dyslexiaapp.examinemenu.LetterIdentify;
 
 public class TestScreen extends AppCompatActivity {
 
