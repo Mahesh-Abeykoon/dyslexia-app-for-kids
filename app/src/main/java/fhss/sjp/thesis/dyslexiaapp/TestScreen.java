@@ -16,15 +16,16 @@ public class TestScreen extends AppCompatActivity {
         setContentView(R.layout.test_screen);
     }
 
-    public void openImageIdentifyScreen(View v){
+    public void openImageIdentifyScreen(View v) {
         Intent intent = new Intent(this, ImageIdentify.class);
         startActivity(intent);
 
     }
 
-    public void openLetterIdentifyScreen(View v){
+    public void openLetterIdentifyScreen(View v) {
         Intent intent = new Intent(this, LetterIdentify.class);
         startActivity(intent);
 
 
+    }
 }

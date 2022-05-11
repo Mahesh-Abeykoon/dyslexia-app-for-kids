@@ -13,11 +13,12 @@
         <entry key="..\:/Users/mahesh/AndroidStudioProjects/DyslexiaApp/app/src/main/res/layout/learn_colors.xml" value="0.33" />
         <entry key="..\:/Users/mahesh/AndroidStudioProjects/DyslexiaApp/app/src/main/res/layout/learn_screen.xml" value="0.22" />
         <entry key="..\:/Users/mahesh/AndroidStudioProjects/DyslexiaApp/app/src/main/res/layout/leran_alphabet_writing.xml" value="0.11354166666666667" />
+        <entry key="..\:/Users/mahesh/AndroidStudioProjects/DyslexiaApp/app/src/main/res/layout/letter_identify.xml" value="0.2" />
         <entry key="..\:/Users/mahesh/AndroidStudioProjects/DyslexiaApp/app/src/main/res/layout/test_screen.xml" value="0.25" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
