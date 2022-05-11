@@ -20,4 +20,10 @@ public class TestScreen extends AppCompatActivity {
         startActivity(intent);
 
     }
+
+    public void openLetterIdentifyScreen(View v){
+        Intent intent = new Intent(this, LetterIdentify.class);
+        startActivity(intent);
+
+
 }
