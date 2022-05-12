@@ -620,6 +620,7 @@
         android:background="@drawable/roundbutton"
         android:onClick="displayLetter"
         android:text="z"
+        android:backgroundTint="#2338AE"
         android:textAppearance="@style/TextAppearance.AppCompat.Small"
         android:textColor="#F8F4F4"
         android:textSize="30sp"
