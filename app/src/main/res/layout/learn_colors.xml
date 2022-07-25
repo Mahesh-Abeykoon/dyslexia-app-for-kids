@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".learningmenu.LearnColors"
+    android:background="#95E6F1">
+
+
+
+    <ImageView
+        android:id="@+id/viewColor"
+        android:layout_width="301dp"
+        android:layout_height="171dp"
+        android:layout_marginEnd="32dp"
+        android:background="#F3F3F3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.705"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.212"
+        android:contentDescription="TODO"
+        android:type="radial"
+        />
+
+    <TextView
+        android:id="@+id/colorName"
+        style="@android:style/Widget.Holo.TextView.SpinnerItem"
+        android:layout_width="182dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="220dp"
+        android:fontFamily="@font/dyslexia"
+        android:text="COLOR"
+        android:textColor="#FBF5F5"
+        android:textSize="28sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LET US LEARN"
+        android:textSize="28dp"
+        android:fontFamily="@font/dyslexia"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.066" />
+
+
+    <ImageButton
+        android:id="@+id/red"
+        android:layout_width="85dp"
+        android:layout_height="93dp"
+        android:background="#DF0A23"
+        android:onClick="putColour"
+        android:tag="red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.168"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.478" />
+
+    <ImageButton
+        android:id="@+id/yellow"
+        android:layout_width="85dp"
+        android:layout_height="93dp"
+        android:background="#FFEB3B"
+        android:onClick="putColour"
+        android:tag="yellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.478"
+        />
+
+    <ImageButton
+        android:id="@+id/blue"
+        android:layout_width="85dp"
+        android:layout_height="93dp"
+        android:background="#2196F3"
+        android:onClick="putColour"
+        android:tag="blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.831"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.478" />
+
+    <ImageButton
+        android:id="@+id/green"
+        android:layout_width="85dp"
+        android:layout_height="93dp"
+        android:background="#008000"
+        android:onClick="putColour"
+        android:tag="green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.648" />
+
+    <ImageButton
+        android:id="@+id/orange"
+        android:layout_width="85dp"
+        android:layout_height="93dp"
+        android:background="#FFA500"
+        android:onClick="putColour"
+        android:tag="orange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.168"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.648" />
+
+    <ImageButton
+        android:id="@+id/purple"
+        android:layout_width="85dp"
+        android:layout_height="93dp"
+        android:background="#800080"
+        android:onClick="putColour"
+        android:tag="purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.831"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.648" />
+
+    <ImageButton
+        android:id="@+id/grey"
+        android:layout_width="85dp"
+        android:layout_height="93dp"
+        android:background="#777177"
+        android:onClick="putColour"
+        android:tag="grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.818" />
+
+    <ImageButton
+        android:id="@+id/pink"
+        android:layout_width="85dp"
+        android:layout_height="93dp"
+        android:background="#F64380"
+        android:onClick="putColour"
+        android:tag="pink"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.168"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.818" />
+
+    <ImageButton
+        android:id="@+id/black"
+        android:layout_width="85dp"
+        android:layout_height="93dp"
+        android:background="#000000"
+        android:onClick="putColour"
+        android:tag="black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.831"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.818" />
+
+    <ImageButton
+        android:id="@+id/white"
+        android:layout_width="247dp"
+        android:layout_height="46dp"
+        android:background="#FFFFFF"
+        android:onClick="putColour"
+        android:tag="white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.925" />
+</androidx.constraintlayout.widget.ConstraintLayout>

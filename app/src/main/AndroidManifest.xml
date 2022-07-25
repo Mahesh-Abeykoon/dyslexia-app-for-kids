@@ -4,10 +4,30 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:icon="@drawable/icon"
+        android:label="Dyslexia App"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.DyslexiaApp" />
+        android:theme="@style/Theme.Design.NoActionBar" >
+
+        <activity android:name=".examinemenu.LetterIdentify"/>
+        <activity android:name=".examinemenu.ImageIdentify"/>
+        <activity android:name=".learningmenu.LearnAlphabetWriting" />
+        <activity android:name=".learningmenu.LearnAlphabet" />
+        <activity android:name=".TestScreen" />
+        <activity android:name=".LearnScreen" />
+        <activity android:name=".learningmenu.LearnColors" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+    </application>
 
 </manifest>
