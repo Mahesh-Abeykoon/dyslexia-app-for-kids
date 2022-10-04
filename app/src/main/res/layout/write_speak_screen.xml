@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    android:background="@drawable/back">
 
 
     <TextView
@@ -21,51 +21,54 @@
         app:layout_constraintVertical_bias="0.066" />
 
 
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Pronunciation "
-        android:textSize="22dp"
-        android:onClick="openWordPronunciationScreen"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.759"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.272" />
-
-
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="openWordPronunciationScreen"
-        android:text="Speak "
-        android:textSize="22dp"
+        android:text="Improve Speaking"
+        android:textSize="20dp"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.591"
+        app:layout_constraintHorizontal_bias="0.725"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.63" />
+        app:layout_constraintVertical_bias="0.632" />
 
     <ImageButton
         android:id="@+id/imageView1"
         android:layout_width="120dp"
         android:layout_height="141dp"
+        android:background="@drawable/roundbutton"
+
+        android:backgroundTint="@color/colorPrimaryDark"
         android:onClick="openWordPronunciationScreen"
+        android:scaleType="fitCenter"
+        android:src="@drawable/i_write"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.171"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.237"
-        />
+        app:layout_constraintVertical_bias="0.284" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="openWordPronunciationScreen"
+        android:text="Improve Pronunciation"
+
+        android:textSize="20dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.322" />
 
     <ImageButton
         android:id="@+id/imageView2"
@@ -73,12 +76,18 @@
         android:layout_height="141dp"
         android:onClick="openWordWriteScreen"
 
+        android:src="@drawable/i_read"
+        android:background="@drawable/roundbutton"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:scaleType="fitCenter"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.171"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.659" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
