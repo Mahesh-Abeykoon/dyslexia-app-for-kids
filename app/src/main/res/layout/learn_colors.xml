@@ -43,20 +43,20 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_weight="1" />
 
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/dyslexia"
         android:text="LET US LEARN"
         android:textSize="28dp"
-        android:fontFamily="@font/dyslexia"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.066" />
-
+        app:layout_constraintVertical_bias="0.045" />
 
     <ImageButton
         android:id="@+id/red"
