@@ -19,6 +19,7 @@
         <activity android:name=".learningmenu.LearnColors" />
         <activity android:name=".speakingwriting.WriteAndSpeakScreen"/>
         <activity android:name=".speakingwriting.WordPronunciationScreen"/>
+        <activity android:name=".speakingwriting.WordWriteScreen"/>
 
         <activity
             android:name=".MainActivity"

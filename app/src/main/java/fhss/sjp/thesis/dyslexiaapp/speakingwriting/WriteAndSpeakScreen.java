@@ -23,8 +23,10 @@ public class WriteAndSpeakScreen extends AppCompatActivity {
         startActivity(intent);
     }
 
-
-
+    public void openWordWriteScreen(View v){
+        Intent intent = new Intent(this, WordWriteScreen.class);
+        startActivity(intent);
+    }
 
 
 
