@@ -35,20 +35,20 @@
         app:layout_constraintVertical_bias="0.066" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="QUIZ"
+        android:text="WORD"
         android:textSize="37dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.647"
+        app:layout_constraintHorizontal_bias="0.713"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.782" />
+        app:layout_constraintVertical_bias="0.525" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TEST"
@@ -58,10 +58,10 @@
         app:layout_constraintHorizontal_bias="0.657"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.525" />
+        app:layout_constraintVertical_bias="0.782" />
 
     <ImageButton
-        android:id="@+id/imageView3"
+        android:id="@+id/imageView2"
         android:layout_width="120dp"
         android:layout_height="141dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -69,7 +69,8 @@
         app:layout_constraintHorizontal_bias="0.219"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.833"
+
+        app:layout_constraintVertical_bias="0.537"
         tools:srcCompat="@tools:sample/avatars" />
 
     <ImageButton
@@ -92,7 +93,7 @@
         app:layout_constraintVertical_bias="0.24" />
 
     <ImageButton
-        android:id="@+id/imageView2"
+        android:id="@+id/imageView3"
         android:layout_width="120dp"
         android:layout_height="141dp"
         android:onClick="openTestScreen"
@@ -101,13 +102,14 @@
         android:background="@drawable/roundbutton"
         android:backgroundTint="@color/colorMediumDark"
         android:scaleType="fitCenter"
-        
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.219"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.537"
+        app:layout_constraintVertical_bias="0.833"
+
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
