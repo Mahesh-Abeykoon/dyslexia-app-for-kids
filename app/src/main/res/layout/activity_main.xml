@@ -64,14 +64,20 @@
         android:id="@+id/imageView2"
         android:layout_width="120dp"
         android:layout_height="141dp"
+        android:src="@drawable/i_s"
+
+        android:background="@drawable/roundbutton"
+        android:backgroundTint="@color/colorMediumDark"
+        android:scaleType="fitCenter"
+        android:onClick="openWriteAndSpeakScreen"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.219"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
 
-        app:layout_constraintVertical_bias="0.537"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintVertical_bias="0.537" />
 
     <ImageButton
         android:id="@+id/imageView1"
