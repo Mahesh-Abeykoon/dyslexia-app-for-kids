@@ -8,7 +8,6 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 import fhss.sjp.thesis.dyslexiaapp.R;
-import fhss.sjp.thesis.dyslexiaapp.learningmenu.LearnColors;
 
 
 public class WriteAndSpeakScreen extends AppCompatActivity {
