@@ -28,6 +28,12 @@ public class WriteAndSpeakScreen extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void openVideoScreen(View v){
+        Intent intent = new Intent(this, VideoScreen.class);
+        startActivity(intent);
+    }
+
+
 
 
 }
