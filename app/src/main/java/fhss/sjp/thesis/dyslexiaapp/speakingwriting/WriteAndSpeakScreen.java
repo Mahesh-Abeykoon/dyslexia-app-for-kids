@@ -8,6 +8,7 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 import fhss.sjp.thesis.dyslexiaapp.R;
+import fhss.sjp.thesis.dyslexiaapp.videolesson.VideoLessonScreen;
 
 
 public class WriteAndSpeakScreen extends AppCompatActivity {
@@ -28,8 +29,8 @@ public class WriteAndSpeakScreen extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void openVideoScreen(View v){
-        Intent intent = new Intent(this, VideoScreen.class);
+    public void openVideoLessonScreen(View v){
+        Intent intent = new Intent(this, VideoLessonScreen.class);
         startActivity(intent);
     }
 

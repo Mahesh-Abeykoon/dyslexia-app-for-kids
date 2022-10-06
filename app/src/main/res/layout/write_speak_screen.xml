@@ -59,7 +59,7 @@
         android:background="@drawable/roundbutton"
 
         android:backgroundTint="@color/colorPrimaryDark"
-        android:onClick="openVideoScreen"
+        android:onClick="openVideoLessonScreen"
         android:scaleType="fitCenter"
         android:src="@drawable/i_v_les"
 
