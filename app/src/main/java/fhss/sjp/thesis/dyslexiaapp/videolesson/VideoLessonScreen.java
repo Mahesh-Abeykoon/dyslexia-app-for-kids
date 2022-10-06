@@ -7,8 +7,7 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 import fhss.sjp.thesis.dyslexiaapp.R;
-import fhss.sjp.thesis.dyslexiaapp.learningmenu.LearnColors;
-import fhss.sjp.thesis.dyslexiaapp.videolesson.hodiya.Hodiya1;
+
 import fhss.sjp.thesis.dyslexiaapp.videolesson.hodiya.HodiyaScreen;
 
 public class VideoLessonScreen extends AppCompatActivity {

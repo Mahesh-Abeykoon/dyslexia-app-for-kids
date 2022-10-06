@@ -21,5 +21,11 @@ public class HodiyaScreen extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void openHodiya2Screen(View v){
+        Intent intent = new Intent(this, Hodiya2.class);
+        startActivity(intent);
+    }
+
+
 
 }
