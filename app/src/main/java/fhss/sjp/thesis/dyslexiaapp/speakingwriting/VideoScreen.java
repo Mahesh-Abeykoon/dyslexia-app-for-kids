@@ -19,7 +19,7 @@ public class VideoScreen extends AppCompatActivity implements SurfaceHolder.Call
         super.onCreate(savedInstanceState);
         setContentView(R.layout.vedio_screen);
 
-        videoPlayer = MediaPlayer.create(this, R.raw.sample);
+        videoPlayer = MediaPlayer.create(this, R.raw.abc);
 
         surfaceV = findViewById(R.id.surfaceView);
         surfaceV.setKeepScreenOn(true);
@@ -41,14 +41,6 @@ public class VideoScreen extends AppCompatActivity implements SurfaceHolder.Call
             @Override
             public void onClick(View view) {
                 videoPlayer.pause();
-            }
-        });
-
-        ImageButton skip = findViewById(R.id.buttonSkip);
-        skip.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                videoPlayer.seekTo(videoPlayer.getDuration() / 2);
             }
         });
 
