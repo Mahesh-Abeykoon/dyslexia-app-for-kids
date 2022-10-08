@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="fhss.sjp.thesis.dyslexiaapp">
 
+    <uses-permission android:name="android.permission.CAMERA" />
     <application
         android:allowBackup="true"
         android:icon="@drawable/icon"
@@ -27,6 +28,7 @@
         <activity android:name=".videolesson.hodiya.Hodiya2"/>
 
         <activity android:name=".speakingwriting.VideoScreen"/>
+        <activity android:name=".videolesson.Camera"/>
 
         <activity
             android:name=".MainActivity"

@@ -22,6 +22,11 @@ public class VideoLessonScreen extends AppCompatActivity {
         Intent intent = new Intent(this, HodiyaScreen.class);
         startActivity(intent);
     }
+    public void openCamera(View v){
+        Intent intent = new Intent(this, Camera.class);
+        startActivity(intent);
+    }
+
 
 
 
