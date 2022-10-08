@@ -18,8 +18,8 @@
 
     <TextView
         android:id="@+id/ocrTextView0"
-        android:layout_width="189dp"
-        android:layout_height="84dp"
+        android:layout_width="195dp"
+        android:layout_height="71dp"
         android:layout_marginStart="76dp"
         android:layout_marginTop="4dp"
         android:text="Scan Words"
@@ -27,21 +27,21 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.048" />
+        app:layout_constraintVertical_bias="0.045" />
 
     <TextView
         android:id="@+id/ocrTextView2"
-        android:layout_width="98dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="168dp"
+        android:layout_width="97dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="164dp"
         android:layout_marginTop="4dp"
+        android:onClick="cameraButtonStart"
         android:text="Click Me"
         android:textSize="25dp"
-        android:onClick="cameraButtonStart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.8" />
+        app:layout_constraintVertical_bias="0.752" />
 
     <TextView
         android:id="@+id/ocrTextView"
@@ -58,16 +58,16 @@
 
     <ImageButton
         android:id="@+id/cameraButton"
-        android:layout_width="117dp"
-        android:layout_height="122dp"
-        android:layout_marginStart="160dp"
+        android:layout_width="126dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="148dp"
         android:onClick="cameraButtonStart"
-        android:scaleType="center"
-        android:src="@drawable/i_camera"
+        android:scaleType="fitCenter"
+        android:src="@drawable/i_camera2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.686" />
+        app:layout_constraintVertical_bias="0.68" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
