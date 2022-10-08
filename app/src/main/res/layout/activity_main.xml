@@ -82,7 +82,7 @@
         android:backgroundTint="@color/colorMediumDark"
         android:onClick="openVideoLessonScreen"
         android:scaleType="fitCenter"
-        android:src="@drawable/i_s"
+        android:src="@drawable/i_v_les"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
