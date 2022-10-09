@@ -42,4 +42,5 @@ dependencies {
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.20'
 
     implementation 'com.google.android.gms:play-services-vision:19.0.0'
+
 }
