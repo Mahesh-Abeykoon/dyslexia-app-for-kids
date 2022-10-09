@@ -35,7 +35,7 @@
 
 
     <ImageButton
-        android:id="@+id/imageView6"
+        android:id="@+id/imageView1"
         android:layout_width="120dp"
         android:layout_height="141dp"
         android:onClick="openHodiyaScreen"
@@ -47,6 +47,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.223" />
+
+    <ImageButton
+        android:id="@+id/imageView3"
+        android:layout_width="120dp"
+        android:layout_height="141dp"
+        android:onClick="openMiniDictionaryScreen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.171"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.456" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -23,6 +23,10 @@ public class VideoLessonScreen extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void openMiniDictionaryScreen(View v){
+        Intent intent = new Intent(this, MiniDictionaryScreen.class);
+        startActivity(intent);
+    }
 
 
 
