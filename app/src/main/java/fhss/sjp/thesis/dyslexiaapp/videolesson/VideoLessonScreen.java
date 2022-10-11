@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import fhss.sjp.thesis.dyslexiaapp.R;
 
+import fhss.sjp.thesis.dyslexiaapp.videolesson.alphabet.EngAlpScreen;
 import fhss.sjp.thesis.dyslexiaapp.videolesson.hodiya.HodiyaScreen;
 
 public class VideoLessonScreen extends AppCompatActivity {
@@ -23,6 +24,10 @@ public class VideoLessonScreen extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void openEngAlpScreen(View v){
+        Intent intent = new Intent(this, EngAlpScreen.class);
+        startActivity(intent);
+    }
 
 
 
