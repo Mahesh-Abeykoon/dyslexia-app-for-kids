@@ -26,6 +26,7 @@
         <activity android:name=".videolesson.hodiya.HodiyaScreen"/>
         <activity android:name=".videolesson.hodiya.Hodiya1"/>
         <activity android:name=".videolesson.hodiya.Hodiya2"/>
+        <activity android:name=".videolesson.hodiya.Hodiya3"/>
 
         <activity android:name=".speakingwriting.VideoScreen"/>
         <activity android:name=".speakingwriting.Camera"/>
