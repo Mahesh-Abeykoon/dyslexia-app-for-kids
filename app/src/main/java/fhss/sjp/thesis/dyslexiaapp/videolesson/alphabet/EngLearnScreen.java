@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import fhss.sjp.thesis.dyslexiaapp.R;
 
 
-public class EngAlpScreen extends AppCompatActivity {
+public class EngLearnScreen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
