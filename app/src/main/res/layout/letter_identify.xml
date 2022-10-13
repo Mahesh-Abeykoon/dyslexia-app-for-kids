@@ -5,7 +5,9 @@
     android:id="@+id/screenLI"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".examinemenu.LetterIdentify">
+    tools:context=".examinemenu.LetterIdentify"
+    android:background="@drawable/back_5"
+    >
 
 
 
@@ -27,7 +29,7 @@
         android:layout_width="140dp"
         android:layout_height="40dp"
         android:background="@drawable/roundbutton"
-        android:backgroundTint="@color/colorMediumDark"
+        android:backgroundTint="@color/colorPrimaryDark"
         android:onClick="dictate"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -143,7 +145,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/roundbutton"
-        android:backgroundTint="@color/colorAccent"
+        android:backgroundTint="@color/teal_700"
         android:onClick="initAfresh"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"

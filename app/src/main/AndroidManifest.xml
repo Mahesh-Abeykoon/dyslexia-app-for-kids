@@ -13,6 +13,7 @@
 
         <activity android:name=".examinemenu.LetterIdentify"/>
         <activity android:name=".examinemenu.ImageIdentify"/>
+
         <activity android:name=".learningmenu.LearnAlphabetWriting" />
         <activity android:name=".learningmenu.LearnAlphabet" />
         <activity android:name=".TestScreen" />
