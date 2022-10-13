@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0B1B35"
+    android:background="@drawable/back_10"
     tools:context=".MainActivity">
 
 
@@ -14,6 +14,7 @@
         android:layout_height="wrap_content"
         android:text="LEARN"
         android:textSize="33dp"
+        android:textColor="@color/teal_700"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.713"
@@ -27,6 +28,7 @@
         android:layout_height="wrap_content"
         android:text="WELCOME TO APP"
         android:textSize="30dp"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
@@ -40,6 +42,7 @@
         android:layout_height="wrap_content"
         android:text="WORD"
         android:textSize="33dp"
+        android:textColor="@color/teal_700"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.714"
@@ -53,6 +56,8 @@
         android:layout_height="wrap_content"
         android:text="TEST"
         android:textSize="33dp"
+        android:textColor="@color/teal_700"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.678"
@@ -66,6 +71,7 @@
         android:layout_height="wrap_content"
         android:text="TEST"
         android:textSize="33dp"
+        android:textColor="@color/teal_700"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.678"
