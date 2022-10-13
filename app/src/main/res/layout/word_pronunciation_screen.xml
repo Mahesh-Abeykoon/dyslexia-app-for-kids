@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back_1"
+    android:background="@drawable/back_7"
     >
 
     <EditText
@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="212dp"
         android:gravity="center_horizontal"
-        android:text="Text To Speech"
+        android:text="Write Anything and Check whether you can Pronounce them Correctly"
         android:textColor="@android:color/holo_green_dark"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
