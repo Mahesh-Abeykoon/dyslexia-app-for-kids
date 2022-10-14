@@ -12,17 +12,20 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="176dp"
         android:gravity="center"
-        android:hint="Enter Something"
+        android:hint="Enter Here"
         android:textSize="26dp"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="0dp" />
 
     <Button
         android:id="@+id/buttonText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="205dp"
+        android:layout_height="62dp"
         android:layout_gravity="center"
+        android:background="@color/colorPrimaryDark"
         android:text="Pronounce Word"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -38,7 +41,7 @@
         android:gravity="center_horizontal"
         android:text="Write Anything and Check whether you can Pronounce them Correctly"
         android:textColor="@android:color/holo_green_dark"
-        android:textSize="36sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="-16dp" />
 
