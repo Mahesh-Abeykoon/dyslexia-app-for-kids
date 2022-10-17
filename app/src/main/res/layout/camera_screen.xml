@@ -27,6 +27,7 @@
         android:layout_marginTop="4dp"
         android:text="Scan Words"
         android:textSize="35dp"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -50,13 +51,28 @@
         android:layout_width="126dp"
         android:layout_height="74dp"
         android:layout_marginStart="140dp"
+        android:background="@drawable/p"
         android:onClick="cameraButtonStart"
         android:scaleType="fitCenter"
         android:src="@drawable/i_camera2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.621" />
+        app:layout_constraintVertical_bias="0.644" />
+
+    <ImageButton
+        android:id="@+id/cameraButton2"
+        android:layout_width="75dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="168dp"
+        android:background="@drawable/p"
+        android:onClick="cameraButtonStart"
+        android:scaleType="fitCenter"
+        android:src="@drawable/i_hand"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.742" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
