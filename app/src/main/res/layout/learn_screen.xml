@@ -57,6 +57,7 @@
         android:layout_height="wrap_content"
         android:text="WRITE ALPHABET"
         android:textSize="22dp"
+        android:fontFamily="@font/dyslexia"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.843"
