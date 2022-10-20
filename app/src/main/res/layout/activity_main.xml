@@ -118,16 +118,15 @@
 
     <ImageButton
         android:id="@+id/imageView11"
-        android:layout_width="79dp"
-        android:layout_height="60dp"
-        android:onClick="openLearnScreen"
+        android:layout_width="55dp"
+        android:layout_height="66dp"
         android:src="@drawable/app_icon"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.798"
+        app:layout_constraintHorizontal_bias="0.758"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.038" />
+        app:layout_constraintVertical_bias="0.036" />
 
     <ImageButton
         android:id="@+id/imageView3"
