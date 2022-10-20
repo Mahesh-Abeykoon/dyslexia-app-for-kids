@@ -27,15 +27,15 @@
         android:id="@+id/textView0"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="WELCOME"
+        android:text="M A I N   M E N U"
         android:textColor="@color/white"
-        android:textSize="30dp"
+        android:textSize="31dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.246"
+        app:layout_constraintHorizontal_bias="0.335"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.038" />
+        app:layout_constraintVertical_bias="0.035" />
 
     <TextView
         android:id="@+id/textView2"
@@ -118,14 +118,14 @@
 
     <ImageButton
         android:id="@+id/imageView11"
-        android:layout_width="86dp"
-        android:layout_height="83dp"
+        android:layout_width="66dp"
+        android:layout_height="74dp"
         android:background="@drawable/app_icon"
         android:scaleType="centerCrop"
         android:src="@drawable/app_icon"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.701"
+        app:layout_constraintHorizontal_bias="0.953"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.019" />
