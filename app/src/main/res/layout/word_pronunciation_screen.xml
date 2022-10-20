@@ -6,6 +6,20 @@
     android:background="@drawable/back_9"
     >
 
+    <ImageButton
+        android:id="@+id/imageView11"
+        android:layout_width="55dp"
+        android:layout_height="66dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/i_speaker"
+        android:background="@drawable/i_speaker"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.519" />
+
     <EditText
         android:id="@+id/Text"
         android:layout_width="match_parent"

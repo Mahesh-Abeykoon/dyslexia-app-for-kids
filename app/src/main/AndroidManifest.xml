@@ -7,6 +7,7 @@
         android:allowBackup="true"
         android:icon="@drawable/app_icon"
         android:label="Dyslexia App"
+        android:roundIcon="@drawable/app_icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.NoActionBar" >
 

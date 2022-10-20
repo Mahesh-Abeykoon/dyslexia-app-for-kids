@@ -32,10 +32,10 @@
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.417"
+        app:layout_constraintHorizontal_bias="0.246"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.049" />
+        app:layout_constraintVertical_bias="0.038" />
 
     <TextView
         android:id="@+id/textView2"
@@ -118,15 +118,17 @@
 
     <ImageButton
         android:id="@+id/imageView11"
-        android:layout_width="55dp"
-        android:layout_height="66dp"
+        android:layout_width="86dp"
+        android:layout_height="83dp"
+        android:background="@drawable/app_icon"
+        android:scaleType="centerCrop"
         android:src="@drawable/app_icon"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.758"
+        app:layout_constraintHorizontal_bias="0.701"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.036" />
+        app:layout_constraintVertical_bias="0.019" />
 
     <ImageButton
         android:id="@+id/imageView3"
