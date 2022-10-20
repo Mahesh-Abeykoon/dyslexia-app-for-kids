@@ -18,10 +18,10 @@
         android:textSize="33dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.705"
+        app:layout_constraintHorizontal_bias="0.686"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.218" />
+        app:layout_constraintVertical_bias="0.21" />
 
     <TextView
         android:id="@+id/textView0"
@@ -41,30 +41,29 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="WORD"
+        android:text="WATCH"
         android:textColor="@color/colorAccent"
         android:textSize="33dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.712"
+        app:layout_constraintHorizontal_bias="0.711"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.443" />
+        app:layout_constraintVertical_bias="0.44" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TEST"
+        android:text="WORDS"
         android:textColor="@color/colorAccent"
         android:textSize="33dp"
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.678"
+        app:layout_constraintHorizontal_bias="0.713"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.664" />
+        app:layout_constraintVertical_bias="0.658" />
 
     <TextView
         android:id="@+id/textView4"
@@ -75,10 +74,10 @@
         android:textSize="33dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.678"
+        app:layout_constraintHorizontal_bias="0.654"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.878" />
+        app:layout_constraintVertical_bias="0.881" />
 
     <ImageButton
         android:id="@+id/imageView2"
@@ -103,8 +102,6 @@
         android:id="@+id/imageView1"
         android:layout_width="108dp"
         android:layout_height="125dp"
-
-
         android:background="@drawable/roundbutton"
         android:backgroundTint="@color/colorMediumDark"
         android:onClick="openLearnScreen"
@@ -123,7 +120,6 @@
         android:layout_width="108dp"
         android:layout_height="125dp"
         android:background="@drawable/roundbutton"
-
         android:backgroundTint="@color/colorMediumDark"
         android:onClick="openWriteAndSpeakScreen"
         android:scaleType="fitCenter"
@@ -143,12 +139,10 @@
         android:layout_width="108dp"
         android:layout_height="125dp"
         android:background="@drawable/roundbutton"
-
         android:backgroundTint="@color/colorMediumDark"
         android:onClick="openTestScreen"
         android:scaleType="fitCenter"
         android:src="@drawable/i_test"
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.219"
