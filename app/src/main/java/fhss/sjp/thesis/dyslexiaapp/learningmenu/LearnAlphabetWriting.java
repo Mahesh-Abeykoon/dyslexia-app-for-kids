@@ -24,12 +24,11 @@ import pl.droidsonroids.gif.GifImageView;
 public class LearnAlphabetWriting extends AppCompatActivity {
 
     ArrayList<Button> buttons;
-    ImageButton btnSpeak;
-    boolean numview = false;
+    ImageButton buttonSpeak;
+    boolean numberView = false;
     ImageButton capsButton,toggleNumeric;
     boolean capsed = false;
     GifImageView imageView3;
-    TextView textView3;
     TextToSpeech tts ;
     public static final int VOICE_RECOGNITION_REQUEST_CODE = 1234;
 
@@ -77,11 +76,10 @@ public class LearnAlphabetWriting extends AppCompatActivity {
 
         buttons.add((Button) findViewById(R.id.buttonY));
         buttons.add((Button) findViewById(R.id.buttonZ));
-        //buttons.add((Button) findViewById(R.id.button28));
 
         capsButton = (ImageButton) findViewById(R.id.capsButton2);
         toggleNumeric = (ImageButton) findViewById(R.id.toggleNumeric2);
-        btnSpeak = (ImageButton) findViewById(R.id.btn_speak2);
+        buttonSpeak = (ImageButton) findViewById(R.id.btn_speak2);
 
         tts = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
             @Override
@@ -92,7 +90,7 @@ public class LearnAlphabetWriting extends AppCompatActivity {
             }
         });
 
-        btnSpeak.setOnClickListener(new View.OnClickListener(){
+        buttonSpeak.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
                 startVoiceRecognitionActivity(v);
@@ -113,14 +111,14 @@ public class LearnAlphabetWriting extends AppCompatActivity {
         startActivityForResult(intent, VOICE_RECOGNITION_REQUEST_CODE);
     }
 
-    public void showLetterAnimation(View ae) {
-        Button but = (Button) ae;
-        String text = (String) but.getText();
+    public void showLetterAnimation(View view) {
+        Button button = (Button) view;
+        String text = (String) button.getText();
         String res = text;
         if (!capsed) res=res+"1";
         else res=res.toLowerCase();
 
-        if (numview){
+        if (numberView){
             res="number"+res;
         }
 
@@ -140,20 +138,16 @@ public class LearnAlphabetWriting extends AppCompatActivity {
             else
                 buttons.get(i).setText(str.toLowerCase());
         }
-        //capsButton.setTextColor(Color.argb(100,109,128,143));
         capsed = !capsed;
         if (capsed) {
             capsButton.setImageAlpha(70);
             tts.speak("Upper case letters",TextToSpeech.QUEUE_FLUSH, null  );
 
-
         } else {
             capsButton.setImageAlpha(200);
             tts.speak("Lower Case Letters",TextToSpeech.QUEUE_ADD, null  );
-
         }
     }
-
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -163,7 +157,6 @@ public class LearnAlphabetWriting extends AppCompatActivity {
 
             ArrayList matches = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
 
-
             String alphas = "abcdefghijklmnopqrstuvwxyz1234567890";
 
             String spoken_words = String.valueOf(matches.get(0));
@@ -171,9 +164,6 @@ public class LearnAlphabetWriting extends AppCompatActivity {
             String speech;
 
             String text = Function.parseSpokenWordsToWord(spoken_words, alphas);
-
-
-
 
 
             if(text!="") {
@@ -211,7 +201,7 @@ public class LearnAlphabetWriting extends AppCompatActivity {
     public void changeToNumeric(View v){
         String alphas= "abcdefghijklmnopqrstuvwxyz";
         int i = 0, j=0;
-        if(!numview){
+        if(!numberView){
             while (i<26){
                 if (i==6 || i>10){
                     buttons.get(i).setText("");
@@ -224,7 +214,7 @@ public class LearnAlphabetWriting extends AppCompatActivity {
             }
             capsButton.setEnabled(!capsButton.isEnabled());
             toggleNumeric.setImageResource(R.drawable.numtoalpha);
-            numview = true;
+            numberView = true;
             capsed = true;
             tts.speak("Numbers",TextToSpeech.QUEUE_ADD, null  );
         }else{
@@ -233,8 +223,8 @@ public class LearnAlphabetWriting extends AppCompatActivity {
                 buttons.get(x).setText(String.valueOf(alphas.charAt(x)));
             }
             capsButton.setEnabled(!capsButton.isEnabled());
-            toggleNumeric.setImageResource(R.drawable.sort_numeric_descending_icon_136185);
-            numview = false;
+            toggleNumeric.setImageResource(R.drawable.i_sort);
+            numberView = false;
             capsed = false;
             tts.speak("Alphabets",TextToSpeech.QUEUE_ADD, null  );
 
