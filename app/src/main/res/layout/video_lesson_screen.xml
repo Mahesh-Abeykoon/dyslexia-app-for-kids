@@ -67,7 +67,7 @@
         android:layout_height="141dp"
         android:onClick="openHodiyaScreen"
         android:scaleType="centerCrop"
-        android:src="@drawable/i_hodiya"
+        android:src="@drawable/i_h_1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.171"
