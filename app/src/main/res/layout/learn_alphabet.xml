@@ -576,7 +576,7 @@
         android:background="@drawable/roundbutton"
         android:backgroundTint="#29ACB8"
         android:onClick="changeToNumeric"
-        android:src="@drawable/sort_numeric_descending_icon_136185"
+        android:src="@drawable/i_sort"
         android:text="y"
         android:textAppearance="@style/TextAppearance.AppCompat.Small"
         android:textColor="#F8F4F4"
