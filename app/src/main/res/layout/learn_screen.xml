@@ -4,21 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back_9"
-    >
+    android:background="@drawable/back_9">
 
 
     <TextView
         android:id="@+id/textView0"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="LET US LEARN"
         android:fontFamily="@font/dyslexia"
-        android:textSize="30dp"
         android:onClick="openAlphabetLearnWritingScreen"
+        android:text="LET US LEARN"
+        android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.066" />
@@ -27,9 +26,9 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/dyslexia"
         android:text="LEARN ALPHABET"
         android:textSize="19dp"
-        android:fontFamily="@font/dyslexia"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.85"
@@ -41,38 +40,38 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/dyslexia"
         android:text="LEARN COLORS"
         android:textSize="19dp"
-        android:fontFamily="@font/dyslexia"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.759"
+        app:layout_constraintHorizontal_bias="0.771"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.272" />
+        app:layout_constraintVertical_bias="0.276" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/dyslexia"
         android:text="WRITE ALPHABET"
         android:textSize="19dp"
-        android:fontFamily="@font/dyslexia"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.843"
+        app:layout_constraintHorizontal_bias="0.852"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.776" />
+        app:layout_constraintVertical_bias="0.78" />
 
     <ImageButton
         android:id="@+id/imageView2"
         android:layout_width="120dp"
         android:layout_height="141dp"
-        android:onClick="openAlphabetLearnScreen"
-
         android:background="@drawable/roundbutton"
+
         android:backgroundTint="@color/colorMediumDark"
+        android:onClick="openAlphabetLearnScreen"
         android:scaleType="fitCenter"
         android:src="@drawable/i_l_a"
 
@@ -81,17 +80,16 @@
         app:layout_constraintHorizontal_bias="0.171"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.533"
-        />
+        app:layout_constraintVertical_bias="0.533" />
 
     <ImageButton
         android:id="@+id/imageView3"
         android:layout_width="120dp"
         android:layout_height="141dp"
-        android:onClick="openAlphabetLearnWritingScreen"
-
         android:background="@drawable/roundbutton"
+
         android:backgroundTint="@color/colorMediumDark"
+        android:onClick="openAlphabetLearnWritingScreen"
         android:scaleType="fitCenter"
         android:src="@drawable/i_w_a"
 
@@ -100,17 +98,16 @@
         app:layout_constraintHorizontal_bias="0.171"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.83"
-        />
+        app:layout_constraintVertical_bias="0.83" />
 
     <ImageButton
         android:id="@+id/imageView1"
         android:layout_width="120dp"
         android:layout_height="141dp"
-        android:onClick="openColorsLearnScreen"
-
         android:background="@drawable/roundbutton"
+
         android:backgroundTint="@color/colorMediumDark"
+        android:onClick="openColorsLearnScreen"
         android:scaleType="fitCenter"
         android:src="@drawable/i_c_l"
 
@@ -119,8 +116,7 @@
         app:layout_constraintHorizontal_bias="0.171"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.237"
-         />
+        app:layout_constraintVertical_bias="0.237" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
