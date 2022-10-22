@@ -27,7 +27,7 @@ import static android.Manifest.permission.CAMERA;
 
 public class Camera extends AppCompatActivity {
 
-    private TextView tView;
+    private TextView textView;
     private SurfaceView surfView;
 
     private CameraSource cameraSource;
@@ -83,7 +83,6 @@ public class Camera extends AppCompatActivity {
             }
         });
 
-
         textRecognizer.setProcessor(new Detector.Processor<TextBlock>() {
             @Override
             public void release() {
@@ -118,8 +117,8 @@ public class Camera extends AppCompatActivity {
 
     private void resultObtained(){
         setContentView(R.layout.camera_screen);
-        tView = findViewById(R.id.ocrTextView);
-        tView.setText(stringResult);
+        textView = findViewById(R.id.ocrTextView);
+        textView.setText(stringResult);
         ttSpeech.speak(stringResult, TextToSpeech.QUEUE_FLUSH, null, null);
     }
 
