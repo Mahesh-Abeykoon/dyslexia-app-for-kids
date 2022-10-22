@@ -64,7 +64,7 @@ public class WordWriteScreen extends AppCompatActivity {
             if (resultCode == RESULT_OK && data != null) {
                 ArrayList<String> result = data.getStringArrayListExtra(
                         RecognizerIntent.EXTRA_RESULTS);
-                tv_Speech_to_text.setText(
+                speech_to_text.setText(
                         Objects.requireNonNull(result).get(0));
             }
         }

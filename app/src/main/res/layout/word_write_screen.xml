@@ -8,7 +8,7 @@
 
 
     <TextView
-        android:id="@+id/tv_speech_to_text"
+        android:id="@+id/_speech_to_text"
         android:layout_width="207dp"
         android:layout_height="206dp"
         android:layout_alignParentTop="true"
