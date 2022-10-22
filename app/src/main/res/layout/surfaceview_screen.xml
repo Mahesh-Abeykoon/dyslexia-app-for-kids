@@ -8,7 +8,7 @@
 
     <SurfaceView
         android:id="@+id/surfaceView"
-        android:layout_width="336dp"
+        android:layout_width="318dp"
         android:layout_height="623dp"
         android:layout_marginStart="36dp"
         android:layout_marginTop="28dp"
