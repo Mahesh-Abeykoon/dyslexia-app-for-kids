@@ -19,8 +19,8 @@ import fhss.sjp.thesis.dyslexiaapp.R;
 
 public class WordWriteScreen extends AppCompatActivity {
 
-    private ImageView iv_mic;
-    private TextView tv_Speech_to_text;
+    private ImageView mic;
+    private TextView speech_to_text;
     private static final int REQUEST_CODE_SPEECH_INPUT = 1;
 
     @Override
@@ -28,10 +28,10 @@ public class WordWriteScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.word_write_screen);
 
-        iv_mic = findViewById(R.id.iv_mic);
-        tv_Speech_to_text = findViewById(R.id.tv_speech_to_text);
+        mic = findViewById(R.id.iv_mic);
+        speech_to_text = findViewById(R.id._speech_to_text);
 
-        iv_mic.setOnClickListener(new View.OnClickListener() {
+        mic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v)
             {
