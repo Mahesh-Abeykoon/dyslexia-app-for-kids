@@ -28,15 +28,17 @@
         android:gravity="center"
         android:hint="Enter Here"
         android:textSize="26dp"
+        android:fontFamily="@font/dyslexia"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="0dp" />
 
     <Button
         android:id="@+id/buttonText"
-        android:layout_width="205dp"
-        android:layout_height="62dp"
+        android:layout_width="222dp"
+        android:layout_height="59dp"
         android:layout_gravity="center"
         android:background="@color/colorPrimaryDark"
+        android:fontFamily="@font/dyslexia"
         android:text="Pronounce Word"
         android:textColor="@color/teal_200"
         android:textSize="20dp"
@@ -55,7 +57,8 @@
         android:gravity="center_horizontal"
         android:text="Write Anything and Check How to Pronounce Correctly"
         android:textColor="@android:color/holo_green_dark"
-        android:textSize="30sp"
+        android:textSize="28sp"
+        android:fontFamily="@font/dyslexia"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="0dp" />
 
