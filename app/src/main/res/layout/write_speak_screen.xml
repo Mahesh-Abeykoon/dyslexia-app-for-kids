@@ -26,6 +26,7 @@
         android:layout_height="wrap_content"
         android:text="Learn More"
         android:textSize="30dp"
+        android:fontFamily="@font/dyslexia"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,6 +40,7 @@
         android:onClick="openWordPronunciationScreen"
         android:text="Improve Reading"
         android:textSize="20dp"
+        android:fontFamily="@font/dyslexia"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -89,7 +91,7 @@
         android:layout_height="wrap_content"
         android:onClick="openWordPronunciationScreen"
         android:text="Scan Words"
-
+        android:fontFamily="@font/dyslexia"
         android:textSize="20dp"
 
         app:layout_constraintBottom_toBottomOf="parent"
@@ -107,6 +109,7 @@
         android:text="Catch Words"
 
         android:textSize="20dp"
+        android:fontFamily="@font/dyslexia"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
