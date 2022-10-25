@@ -26,15 +26,15 @@
 
     <TextView
         android:id="@+id/textView0"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="MAIN MENU"
+        android:layout_width="190dp"
+        android:layout_height="43dp"
         android:fontFamily="@font/dyslexia"
+        android:text="MAIN  MENU"
         android:textColor="@color/white"
         android:textSize="28dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.335"
+        app:layout_constraintHorizontal_bias="0.615"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.035" />
@@ -58,16 +58,16 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="WORDS"
-        android:textColor="@color/colorAccent"
         android:fontFamily="@font/dyslexia"
+        android:text="MORE"
+        android:textColor="@color/colorAccent"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.713"
+        app:layout_constraintHorizontal_bias="0.657"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.658" />
+        app:layout_constraintVertical_bias="0.656" />
 
     <TextView
         android:id="@+id/textView4"
@@ -124,14 +124,15 @@
 
     <ImageButton
         android:id="@+id/imageView11"
-        android:layout_width="66dp"
-        android:layout_height="74dp"
+        android:layout_width="64dp"
+        android:layout_height="75dp"
         android:background="@drawable/app_icon"
+        android:rotation="-21"
         android:scaleType="centerCrop"
         android:src="@drawable/app_icon"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintHorizontal_bias="0.19"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.019" />
