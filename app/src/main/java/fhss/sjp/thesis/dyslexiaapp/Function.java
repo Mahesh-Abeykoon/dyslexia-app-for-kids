@@ -96,7 +96,7 @@ public class Function {
         }
 
         public static String quickResponse(boolean isCorrect){
-            String[] replyIfCorrect = {"Yes you are Correct","Yes It is","You are Right", "Great go on","Excellent"};
+            String[] replyIfCorrect = {"Yes you are Correct Click Next button","Yes It is Click Next button","You are Right Click Next button", "Great go on ","Excellent Click Next button"};
             String[] replyIfIncorrect ={"No it is not correct","It is Wrong","No Try again"};
             Random random = new Random();
             int length;
