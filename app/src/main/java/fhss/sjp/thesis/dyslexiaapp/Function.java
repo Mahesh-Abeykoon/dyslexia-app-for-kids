@@ -111,13 +111,6 @@ public class Function {
         }
 
 
-        public static void enableDisableButton(ArrayList<Button> buttons, boolean status){
-
-            for (Button but : buttons){
-                but.setEnabled(status);
-            }
-        }
-
         public static void showLetterAnimation(String letter, GifImageView imageView, Context context) {
 
 
