@@ -8,6 +8,8 @@ import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.view.View;
 
+import fhss.sjp.thesis.dyslexiaapp.examinemenu.TestScreen;
+import fhss.sjp.thesis.dyslexiaapp.learningmenu.LearnScreen;
 import fhss.sjp.thesis.dyslexiaapp.speakingwriting.WriteAndSpeakScreen;
 import fhss.sjp.thesis.dyslexiaapp.videolesson.VideoLessonScreen;
 
@@ -28,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openLearnScreen(View v){
-        Intent intent = new Intent(this,LearnScreen.class);
+        Intent intent = new Intent(this, LearnScreen.class);
         startActivity(intent);
     }
     public void openVideoLessonScreen(View v){
@@ -40,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
     public void openTestScreen(View v){
-        Intent intent = new Intent(this,TestScreen.class);
+        Intent intent = new Intent(this, TestScreen.class);
         startActivity(intent);
     }
 }
