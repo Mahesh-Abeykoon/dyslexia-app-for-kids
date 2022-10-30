@@ -113,7 +113,7 @@ public class LetterIdentify extends AppCompatActivity {
         String reply = (String) but.getText();
         tts.setSpeechRate(.75f);
         if(reply == correct_letter){
-            tts.speak(Function.responseOnReply(true), TextToSpeech.QUEUE_FLUSH,null);
+            tts.speak(Function.quickResponse(true), TextToSpeech.QUEUE_FLUSH,null);
             String imageName = "@drawable/correct";
             int immg = getResources().getIdentifier(imageName,null, getPackageName());
             imageView.setImageResource(immg);
@@ -121,7 +121,7 @@ public class LetterIdentify extends AppCompatActivity {
 
         }
         else{
-            tts.speak( Function.responseOnReply(false)+",    this is,   " +correct_letter, TextToSpeech.QUEUE_FLUSH,null);
+            tts.speak( Function.quickResponse(false)+",    this is,   " +correct_letter, TextToSpeech.QUEUE_FLUSH,null);
             String imageName = "@drawable/wrong";
             int immg = getResources().getIdentifier(imageName,null, getPackageName());
             imageView.setImageResource(immg);

@@ -15,33 +15,6 @@ import java.util.Random;
 import pl.droidsonroids.gif.GifImageView;
 
 public class Function {
-        public static String[] Options = {
-                "leopard",
-                "sparrow",
-                "cheetah",
-                "grapes",
-                "rose",
-                "cat",
-                "flower",
-                "apple",
-                "guava",
-                "orange",
-                "buffalo",
-                "strawberry",
-                "elephant",
-                "kangaroo",
-                "lioness",
-                "parrot",
-                "snake",
-                "pineapple",
-                "cow",
-                "bouganvilla",
-                "gulmohar",
-                "pomegranate",
-                "lemon",
-                "tiger",
-                "kiwi",
-        };
 
         public static ArrayList<Integer> rand_gen = new ArrayList<Integer>();
         static DigitalInkRecognitionModelIdentifier modelIdentifier = null;
@@ -122,19 +95,18 @@ public class Function {
 
         }
 
-        //response for image identity buttons
-        public static String responseOnReply(boolean quality){
-            String[] positive_text = {"Oh Fantastic","It's correct","You are Right", "Great","You're Excellent"};
-            String[] negative_text ={"It's incorrect","No it's wrong","Try again"};
-            Random rand = new Random();
-            int len;
-            if (quality){
-                len = positive_text.length;
-                return positive_text[rand.nextInt(len-1)];
+        public static String quickResponse(boolean isCorrect){
+            String[] replyIfCorrect = {"Yes you are Correct","Yes It is","You are Right", "Great go on","Excellent"};
+            String[] replyIfIncorrect ={"No it is not correct","It is Wrong","No Try again"};
+            Random random = new Random();
+            int length;
+            if (isCorrect){
+                length = replyIfCorrect.length;
+                return replyIfCorrect[random.nextInt(length-1)];
             }
             else{
-                len=negative_text.length;
-                return negative_text[rand.nextInt(len-1)];
+                length=replyIfIncorrect.length;
+                return replyIfIncorrect[random.nextInt(length-1)];
             }
         }
 
@@ -151,9 +123,9 @@ public class Function {
 
             String imageName = "@drawable/" + letter;
 
-            int immg = context.getResources().getIdentifier(imageName, null, context.getPackageName());
+            int image = context.getResources().getIdentifier(imageName, null, context.getPackageName());
 
-            imageView.setImageResource(immg);
+            imageView.setImageResource(image);
 
         }
 
