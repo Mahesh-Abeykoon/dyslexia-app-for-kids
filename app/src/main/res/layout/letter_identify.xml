@@ -166,6 +166,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button32"
         app:layout_constraintVertical_bias="0.198"
-        app:srcCompat="@drawable/arrow_right_next_forward_icon_124688" />
+        app:srcCompat="@drawable/arrow_right_icon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
