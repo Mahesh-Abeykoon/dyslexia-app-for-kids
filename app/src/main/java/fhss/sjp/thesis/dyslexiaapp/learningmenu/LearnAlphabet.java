@@ -183,7 +183,7 @@ public class LearnAlphabet extends AppCompatActivity {
                 i++;
             }
             capsButton.setEnabled(!capsButton.isEnabled());
-            toggleNumeric.setImageResource(R.drawable.numtoalpha);
+            toggleNumeric.setImageResource(R.drawable.number2alphabet);
             numberView = true;
             tts.speak("Numbers", TextToSpeech.QUEUE_ADD,null);
         }else{
