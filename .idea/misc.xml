@@ -7,9 +7,11 @@
         <entry key="..\:/Users/mahesh/AndroidStudioProjects/DyslexiaApp/app/src/main/res/drawable/roundbutton.xml" value="0.199" />
         <entry key="..\:/Users/mahesh/AndroidStudioProjects/DyslexiaApp/app/src/main/res/layout/activity_image_quiz.xml" value="0.2" />
         <entry key="..\:/Users/mahesh/AndroidStudioProjects/DyslexiaApp/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/mahesh/AndroidStudioProjects/DyslexiaApp/app/src/main/res/layout/alpha_screen.xml" value="0.22" />
         <entry key="..\:/Users/mahesh/AndroidStudioProjects/DyslexiaApp/app/src/main/res/layout/image_identify.xml" value="0.2" />
         <entry key="..\:/Users/mahesh/AndroidStudioProjects/DyslexiaApp/app/src/main/res/layout/learn_alphabet.xml" value="0.22" />
-        <entry key="..\:/Users/mahesh/AndroidStudioProjects/DyslexiaApp/app/src/main/res/layout/learn_alphabet_writing.xml" value="0.33" />
+        <entry key="..\:/Users/mahesh/AndroidStudioProjects/DyslexiaApp/app/src/main/res/layout/learn_alphabet_object.xml" value="0.13697916666666668" />
+        <entry key="..\:/Users/mahesh/AndroidStudioProjects/DyslexiaApp/app/src/main/res/layout/learn_alphabet_writing.xml" value="0.2" />
         <entry key="..\:/Users/mahesh/AndroidStudioProjects/DyslexiaApp/app/src/main/res/layout/learn_colors.xml" value="0.33" />
         <entry key="..\:/Users/mahesh/AndroidStudioProjects/DyslexiaApp/app/src/main/res/layout/learn_screen.xml" value="0.22" />
         <entry key="..\:/Users/mahesh/AndroidStudioProjects/DyslexiaApp/app/src/main/res/layout/leran_alphabet_writing.xml" value="0.11354166666666667" />
@@ -23,5 +25,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.1" />
+      </ProjectState>
+    </option>
   </component>
 </project>

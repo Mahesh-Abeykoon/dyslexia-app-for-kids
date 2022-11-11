@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_6">
+
+
+    <TextView
+        android:id="@+id/_speech_to_text"
+        android:layout_width="231dp"
+        android:layout_height="206dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/dyslexia"
+        android:padding="10dp"
+        android:text="Here Wii Show"
+        android:textColor="@color/teal_200"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/iv_mic"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/iv_mic"
+        app:layout_constraintTop_toBottomOf="@+id/iv_mic"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView0"
+        android:layout_width="213dp"
+        android:layout_height="69dp"
+        android:onClick="openAlphabetLearnWritingScreen"
+        android:text="LET SPEAK"
+        android:textSize="30dp"
+        android:fontFamily="@font/dyslexia"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.656"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.084" />
+
+    <ImageView
+        android:id="@+id/iv_mic"
+        android:layout_width="86dp"
+        android:layout_height="130dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/i_mic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.364" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

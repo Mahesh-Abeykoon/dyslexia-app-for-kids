@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#C6DFD8"
+    android:background="@drawable/gradient_list"
+    android:id="@+id/mainLayout"
     tools:context=".MainActivity">
 
 
@@ -13,89 +14,164 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="LEARN"
-        android:textSize="37dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.713"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.273" />
-
-    <TextView
-        android:id="@+id/textView0"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="WELCOME TO APP"
+        android:fontFamily="@font/dyslexia"
+        android:textColor="@color/colorAccent"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.686"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.066" />
+        app:layout_constraintVertical_bias="0.21" />
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="QUIZ"
-        android:textSize="37dp"
+        android:id="@+id/textView0"
+        android:layout_width="190dp"
+        android:layout_height="43dp"
+        android:fontFamily="@font/dyslexia"
+        android:text="MAIN  MENU"
+        android:textColor="@color/white"
+        android:textSize="28dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.647"
+        app:layout_constraintHorizontal_bias="0.615"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.782" />
+        app:layout_constraintVertical_bias="0.035" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TEST"
-        android:textSize="37dp"
+        android:text="WATCH"
+        android:textColor="@color/colorAccent"
+        android:textSize="30dp"
+        android:fontFamily="@font/dyslexia"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.711"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.44" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/dyslexia"
+        android:text="MORE"
+        android:textColor="@color/colorAccent"
+        android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.657"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.525" />
+        app:layout_constraintVertical_bias="0.656" />
 
-    <ImageButton
-        android:id="@+id/imageView3"
-        android:layout_width="120dp"
-        android:layout_height="141dp"
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TEST"
+        android:textColor="@color/colorAccent"
+        android:fontFamily="@font/dyslexia"
+        android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.219"
+        app:layout_constraintHorizontal_bias="0.654"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.833"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <ImageButton
-        android:id="@+id/imageView1"
-        android:layout_width="120dp"
-        android:layout_height="141dp"
-        android:onClick="openLearnScreen"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.219"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.24"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintVertical_bias="0.881" />
 
     <ImageButton
         android:id="@+id/imageView2"
-        android:layout_width="120dp"
-        android:layout_height="141dp"
-        android:onClick="openTestScreen"
+        android:layout_width="108dp"
+        android:layout_height="125dp"
+        android:background="@drawable/roundbutton"
+
+        android:backgroundTint="@color/colorMediumDark"
+        android:onClick="openVideoLessonScreen"
+        android:scaleType="fitCenter"
+        android:src="@drawable/i_v_les"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.217"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.433"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imageView1"
+        android:layout_width="108dp"
+        android:layout_height="125dp"
+        android:background="@drawable/roundbutton"
+        android:backgroundTint="@color/colorMediumDark"
+        android:onClick="openLearnScreen"
+        android:scaleType="fitCenter"
+        app:layout_constraintDimensionRatio="1:1"
+        android:src="@drawable/i_learn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.219"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.537"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintVertical_bias="0.184" />
+
+
+    <ImageButton
+        android:id="@+id/imageView11"
+        android:layout_width="64dp"
+        android:layout_height="75dp"
+        android:background="@drawable/app_icon"
+        android:rotation="-21"
+        android:scaleType="centerCrop"
+        android:src="@drawable/app_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.19"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.019" />
+
+    <ImageButton
+        android:id="@+id/imageView3"
+        android:layout_width="108dp"
+        android:layout_height="125dp"
+        android:background="@drawable/roundbutton"
+        android:backgroundTint="@color/colorMediumDark"
+        android:onClick="openWriteAndSpeakScreen"
+        android:scaleType="fitCenter"
+        android:src="@drawable/i_as"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.217"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.678"
+
+        />
+
+    <ImageButton
+        android:id="@+id/imageView4"
+        android:layout_width="108dp"
+        android:layout_height="125dp"
+        android:background="@drawable/roundbutton"
+        android:backgroundTint="@color/colorMediumDark"
+        android:onClick="openTestScreen"
+        android:scaleType="fitCenter"
+        android:src="@drawable/i_test"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.219"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.926"
+
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

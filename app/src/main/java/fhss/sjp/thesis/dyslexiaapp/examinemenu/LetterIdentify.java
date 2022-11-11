@@ -5,9 +5,7 @@ import android.speech.tts.TextToSpeech;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Locale;
@@ -37,13 +35,12 @@ public class LetterIdentify extends AppCompatActivity {
         }
     }
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.letter_identify);
 
-        text = "huvabwxefgzlktnopqrmycdijs235647891";
+        text = "qdwkrmycsxefgzlhivabutnjop641789235";
 
         rand_int = new ArrayList<Integer>();
         indices = new ArrayList<Integer>();
@@ -75,7 +72,6 @@ public class LetterIdentify extends AppCompatActivity {
                 }
             }
         });
-
     }
 
     public void dictate(View v){
@@ -100,31 +96,26 @@ public class LetterIdentify extends AppCompatActivity {
         optionsButton.get(indices.get(2)).setText((option2));
         optionsButton.get(indices.get(3)).setText((option3));
 
-
-
         tts.speak(String.valueOf(correct_letter),TextToSpeech.QUEUE_FLUSH,null);
         playButton.setEnabled(false);
         nextButton.setEnabled(false);
-
     }
 
     public void checkAnswer(View v){
-        Button but = (Button) v;
-        String reply = (String) but.getText();
+        Button buttton = (Button) v;
+        String reply = (String) buttton.getText();
         tts.setSpeechRate(.75f);
         if(reply == correct_letter){
-            tts.speak(Function.responseOnReply(true), TextToSpeech.QUEUE_FLUSH,null);
+            tts.speak(Function.quickResponse(true), TextToSpeech.QUEUE_FLUSH,null);
             String imageName = "@drawable/correct";
-            int immg = getResources().getIdentifier(imageName,null, getPackageName());
-            imageView.setImageResource(immg);
-
-
+            int image = getResources().getIdentifier(imageName,null, getPackageName());
+            imageView.setImageResource(image);
         }
         else{
-            tts.speak( Function.responseOnReply(false)+",    this is,   " +correct_letter, TextToSpeech.QUEUE_FLUSH,null);
+            tts.speak( Function.quickResponse(false)+",    this is,   " +correct_letter, TextToSpeech.QUEUE_FLUSH,null);
             String imageName = "@drawable/wrong";
-            int immg = getResources().getIdentifier(imageName,null, getPackageName());
-            imageView.setImageResource(immg);
+            int image = getResources().getIdentifier(imageName,null, getPackageName());
+            imageView.setImageResource(image);
         }
         nextButton.setEnabled(true);
     }
@@ -136,8 +127,6 @@ public class LetterIdentify extends AppCompatActivity {
         nextButton.setVisibility(View.INVISIBLE);
         playButton.setEnabled(true);
         imageView.setImageResource(0);
-
     }
-
 
 }

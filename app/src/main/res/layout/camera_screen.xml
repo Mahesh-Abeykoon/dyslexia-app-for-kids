@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_16"
+    >
+
+
+    <ImageView
+        android:layout_width="101dp"
+        android:layout_height="128dp"
+        android:src="@drawable/i_camera"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.056" />
+
+    <TextView
+        android:id="@+id/ocrTextView0"
+        android:layout_width="250dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/dyslexia"
+        android:text="Scan Words"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07" />
+
+    <TextView
+        android:id="@+id/ocrTextView"
+        android:layout_width="320dp"
+        android:layout_height="235dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="4dp"
+        android:text="Your texts will be showing here..."
+        android:textSize="25dp"
+        android:fontFamily="@font/dyslexia"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.38" />
+
+    <ImageButton
+        android:id="@+id/cameraButton"
+        android:layout_width="126dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="128dp"
+        android:background="@drawable/p"
+        android:onClick="cameraButtonStart"
+        android:scaleType="fitCenter"
+        android:src="@drawable/i_camera2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.645" />
+
+    <ImageButton
+        android:id="@+id/cameraButton2"
+        android:layout_width="75dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="168dp"
+        android:background="@drawable/p"
+        android:onClick="cameraButtonStart"
+        android:scaleType="fitCenter"
+        android:src="@drawable/i_hand"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.742" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
