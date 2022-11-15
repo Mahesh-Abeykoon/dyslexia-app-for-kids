@@ -7,6 +7,10 @@ import com.google.ar.sceneform.AnchorNode;
 import com.google.ar.sceneform.ux.ArFragment;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.ArrayList;
 
 
 public class ARScreen extends AppCompatActivity {
@@ -15,13 +19,15 @@ public class ARScreen extends AppCompatActivity {
     private Button btnRemove;
     AnchorNode anchorNode;
 
+    private ArrayList<Integer> imagesPath = new ArrayList<Integer>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.ar_screen);
 
-        arFragment = (ArFragment)getSupportFragmentManager().findFragmentById(R.id.fragment);
-        removeButton = (Button)findViewById(R.id.remove);
+        arFragment = (ArFragment) getSupportFragmentManager().findFragmentById(R.id.fragment);
+        removeButton = (Button) findViewById(R.id.remove);
         getImages();
 
         arFragment.setOnTapArPlaneListener((hitResult, plane, motionEvent) -> {
@@ -29,14 +35,38 @@ public class ARScreen extends AppCompatActivity {
             Anchor anchor = hitResult.createAnchor();
 
             ModelRenderable.builder()
-                    .setSource(this,Uri.parse(Common.model))
+                    .setSource(this, Uri.parse(Common.model))
                     .build()
-                    .thenAccept(modelRenderable -> addModelToScene(anchor,modelRenderable));
+                    .thenAccept(modelRenderable -> addModelToScene(anchor, modelRenderable));
         });
 
         removeButton.setOnClickListener(view -> removeAnchorNode(anchorNode));
     }
 
+    private void getImages() {
+
+        imagesPath.add(R.drawable.bat);
+        imagesPath.add(R.drawable.bear);
+
+        namesPath.add("Bat");
+        namesPath.add("Bear");
+
+        modelNames.add("bat.sfb");
+        modelNames.add("bear.sfb");
+
+        initaiteRecyclerview();
+    }
+
+
+
+    private void initaiteRecyclerview() {
+
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false);
+        RecyclerView recView = (RecyclerView)findViewById(R.id.recyclerview);
+        recyclerView.setLayoutManager(layoutManager);
+        RecyclerviewAdapter rVadapter = new RecyclerviewAdapter(this,namesPath,imagesPath,modelNames);
+        recyclerView.setAdapter(rVadapter);
 
     }
+}
 
