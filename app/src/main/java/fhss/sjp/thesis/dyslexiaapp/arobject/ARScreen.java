@@ -58,16 +58,32 @@ public class ARScreen extends AppCompatActivity {
     }
 
 
-
     private void initaiteRecyclerview() {
 
-        LinearLayoutManager layoutManager = new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false);
-        RecyclerView recView = (RecyclerView)findViewById(R.id.recyclerview);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
+        RecyclerView recView = (RecyclerView) findViewById(R.id.recyclerview);
         recyclerView.setLayoutManager(layoutManager);
-        RecyclerviewAdapter rVadapter = new RecyclerviewAdapter(this,namesPath,imagesPath,modelNames);
+        RecyclerviewAdapter rVadapter = new RecyclerviewAdapter(this, namesPath, imagesPath, modelNames);
         recyclerView.setAdapter(rVadapter);
 
     }
 
-}
+    private void addModelToScene(Anchor anchorr, ModelRenderable modRenderable) {
 
+        anchorNode = new AnchorNode(anchorr);
+        TransformableNode tfnode = new TransformableNode(arFragment.getTransformationSystem());
+        node.setParent(anchorNode);
+        node.setRenderable(modRenderable);
+        arFragment.getArSceneView().getScene().addChild(anchorNode);
+        tfnode.select();
+    }
+
+    public void removeAnchorNode(AnchorNode removeNode) {
+        if (removeNode != null) {
+            arFragment.getArSceneView().getScene().removeChild(removeNode);
+            removeNode.getAnchor().detach();
+            removeNode.setParent(null);
+            removeNode = null;
+        }
+    }
+}
