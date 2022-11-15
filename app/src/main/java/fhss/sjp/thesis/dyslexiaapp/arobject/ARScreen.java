@@ -68,5 +68,6 @@ public class ARScreen extends AppCompatActivity {
         recyclerView.setAdapter(rVadapter);
 
     }
+
 }
 
