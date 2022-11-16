@@ -34,6 +34,8 @@
 
         <activity android:name=".speakingwriting.Camera"/>
 
+        <activity android:name=".arobject.ARScreen"/>
+
 
         <activity
             android:name=".MainActivity"
