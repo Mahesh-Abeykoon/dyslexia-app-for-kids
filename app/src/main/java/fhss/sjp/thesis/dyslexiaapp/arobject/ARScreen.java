@@ -1,89 +1,92 @@
 package fhss.sjp.thesis.dyslexiaapp.arobject;
 
-import android.net.Uri;
-import android.os.Bundle;
-import android.widget.Button;
-import com.google.ar.sceneform.AnchorNode;
-import com.google.ar.sceneform.ux.ArFragment;
+import fhss.sjp.thesis.dyslexiaapp.Function;
+import fhss.sjp.thesis.dyslexiaapp.R;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.ArrayList;
+import android.net.Uri;
+import android.os.Bundle;
+import android.widget.Button;
 
+import com.google.ar.core.Anchor;
+import com.google.ar.sceneform.AnchorNode;
+import com.google.ar.sceneform.rendering.ModelRenderable;
+import com.google.ar.sceneform.ux.ArFragment;
+import com.google.ar.sceneform.ux.TransformableNode;
+
+import java.util.ArrayList;
 
 public class ARScreen extends AppCompatActivity {
 
-    private ArFragment arFragment;
-    private Button btnRemove;
-    AnchorNode anchorNode;
+    private ArFragment fragmentAR;
+    private Button buttonRemove;
 
-    private ArrayList<Integer> imagesPath = new ArrayList<Integer>();
+    private ArrayList<Integer> imagePath = new ArrayList<Integer>();
+    private ArrayList<String> namePath = new ArrayList<>();
+    private ArrayList<String> modelName = new ArrayList<>();
+    AnchorNode anchorNode;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.ar_screen);
 
-        arFragment = (ArFragment) getSupportFragmentManager().findFragmentById(R.id.fragment);
-        removeButton = (Button) findViewById(R.id.remove);
-        getImages();
+        fragmentAR = (ArFragment)getSupportFragmentManager().findFragmentById(R.id.fragment);
+        buttonRemove = (Button)findViewById(R.id.remove);
+        getImgObject();
 
-        arFragment.setOnTapArPlaneListener((hitResult, plane, motionEvent) -> {
-
-            Anchor anchor = hitResult.createAnchor();
-
+        fragmentAR.setOnTapArPlaneListener((result, plane, moEvent) -> {
+            Anchor anchor = result.createAnchor();
             ModelRenderable.builder()
-                    .setSource(this, Uri.parse(Common.model))
+                    .setSource(this,Uri.parse(Function.modelsfb))
                     .build()
-                    .thenAccept(modelRenderable -> addModelToScene(anchor, modelRenderable));
+                    .thenAccept(modelRenderable -> addModelsToScene(anchor,modelRenderable));
         });
-
-        removeButton.setOnClickListener(view -> removeAnchorNode(anchorNode));
+        buttonRemove.setOnClickListener(view -> removeAnchorNode(anchorNode));
     }
 
-    private void getImages() {
+    private void getImgObject() {
 
-        imagesPath.add(R.drawable.bat);
-        imagesPath.add(R.drawable.bear);
-
-        namesPath.add("Bat");
-        namesPath.add("Bear");
-
-        modelNames.add("bat.sfb");
-        modelNames.add("bear.sfb");
-
-        initaiteRecyclerview();
+        imagePath.add(R.drawable.app_icon);
+        imagePath.add(R.drawable.app_icon);
+        namePath.add("Bat");
+        namePath.add("Bear");
+        modelName.add("bat.sfb");
+        modelName.add("bear.sfb");
+        initiateRecyclerview();
     }
 
+    private void initiateRecyclerview() {
 
-    private void initaiteRecyclerview() {
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false);
+        RecyclerView recyclerView = (RecyclerView)findViewById(R.id.recyclerview);
+        recyclerView.setLayoutManager(linearLayoutManager);
 
-        LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
-        RecyclerView recView = (RecyclerView) findViewById(R.id.recyclerview);
-        recyclerView.setLayoutManager(layoutManager);
-        RecyclerviewAdapter rVadapter = new RecyclerviewAdapter(this, namesPath, imagesPath, modelNames);
-        recyclerView.setAdapter(rVadapter);
+        RecyclerviewAdapter recyclerviewAdapter = new RecyclerviewAdapter(this,namePath,imagePath,modelName);
+        recyclerView.setAdapter(recyclerviewAdapter);
 
     }
 
-    private void addModelToScene(Anchor anchorr, ModelRenderable modRenderable) {
+    private void addModelsToScene(Anchor anchor, ModelRenderable modelRenderable) {
 
-        anchorNode = new AnchorNode(anchorr);
-        TransformableNode tfnode = new TransformableNode(arFragment.getTransformationSystem());
-        node.setParent(anchorNode);
-        node.setRenderable(modRenderable);
-        arFragment.getArSceneView().getScene().addChild(anchorNode);
-        tfnode.select();
+        anchorNode = new AnchorNode(anchor);
+        TransformableNode transformableNode = new TransformableNode(fragmentAR.getTransformationSystem());
+
+        transformableNode.setParent(anchorNode);
+        transformableNode.setRenderable(modelRenderable);
+        fragmentAR.getArSceneView().getScene().addChild(anchorNode);
+        transformableNode.select();
     }
 
-    public void removeAnchorNode(AnchorNode removeNode) {
-        if (removeNode != null) {
-            arFragment.getArSceneView().getScene().removeChild(removeNode);
-            removeNode.getAnchor().detach();
-            removeNode.setParent(null);
-            removeNode = null;
+    public void removeAnchorNode(AnchorNode nodeToRemove) {
+        if (nodeToRemove != null) {
+            fragmentAR.getArSceneView().getScene().removeChild(nodeToRemove);
+            nodeToRemove.getAnchor().detach();
+            nodeToRemove.setParent(null);
+            nodeToRemove = null;
         }
     }
 }
