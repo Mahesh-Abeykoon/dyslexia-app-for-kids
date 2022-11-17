@@ -9,16 +9,16 @@
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_centerInParent="true"
-        app:cardElevation="5dp"
-        app:cardCornerRadius="4dp">
+        app:cardElevation="6dp"
+        app:cardCornerRadius="5dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <ImageView
-                android:layout_width="90dp"
-                android:layout_height="90dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:scaleType="centerCrop"
                 android:layout_centerHorizontal="true"
                 android:id="@+id/imageview"
@@ -26,13 +26,13 @@
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="20dp"
-                android:text="Canada"
+                android:layout_height="22dp"
+                android:text="Sri Lanka"
                 android:id="@+id/text"
                 android:layout_below="@id/imageview"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="5dp"
-                android:textColor="#000"
+                android:layout_marginTop="4dp"
+                android:textColor="#00BCD4"
                 android:layout_marginBottom="5dp"
                 android:autoSizeTextType="uniform"/>
         </RelativeLayout>
