@@ -50,12 +50,18 @@ public class ARScreen extends AppCompatActivity {
 
     private void getImgObject() {
 
+        //animal icon
         imagePath.add(R.drawable.app_icon);
         imagePath.add(R.drawable.app_icon);
+
+        //animals
         namePath.add("Bat");
         namePath.add("Bear");
+
+        //sfb files
         modelName.add("bat.sfb");
         modelName.add("bear.sfb");
+
         initiateRecyclerview();
     }
 
