@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/back_9">
 
 
 
@@ -12,8 +13,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="openAlphabetLearnWritingScreen"
-            android:text="YOUR ARE EXAMINE"
+            android:text="FUN AND LEARN"
             android:textSize="30dp"
+            android:src="@drawable/i_test"
+            android:fontFamily="@font/dyslexia"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
@@ -26,44 +29,16 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="IDENTIFY LETTERS"
-        android:textSize="22dp"
+        android:fontFamily="@font/dyslexia"
         android:onClick="openLetterIdentifyScreen"
+        android:text="IDENTIFY LETTERS"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.873"
+        app:layout_constraintHorizontal_bias="0.906"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.526" />
-
-
-
-        <ImageButton
-            android:id="@+id/imageView3"
-            android:layout_width="120dp"
-            android:layout_height="141dp"
-            android:onClick="openAugmentedRealityScreen"
-
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.171"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.83"
-            tools:srcCompat="@tools:sample/avatars" />
-
-    <ImageButton
-            android:id="@+id/imageView2"
-            android:onClick="openLetterIdentifyScreen"
-            android:layout_width="120dp"
-            android:layout_height="141dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.171"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.533"
-            tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintVertical_bias="0.36" />
 
     <TextView
         android:id="@+id/textView8"
@@ -73,11 +48,42 @@
         android:layout_marginTop="147dp"
         android:layout_marginEnd="148dp"
         android:layout_marginBottom="158dp"
-        android:text="TEST 2"
-        android:textSize="22dp"
+        android:fontFamily="@font/dyslexia"
+        android:text="AR OBJECT"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageView3"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.182" />
+
+    <ImageButton
+        android:id="@+id/imageView3"
+        android:layout_width="120dp"
+        android:layout_height="141dp"
+        android:onClick="openAugmentedRealityScreen"
+        android:scaleType="centerCrop"
+        android:src="@drawable/i_ar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.171"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.632" />
+
+    <ImageButton
+        android:id="@+id/imageView2"
+        android:layout_width="120dp"
+        android:layout_height="141dp"
+        android:onClick="openLetterIdentifyScreen"
+        android:scaleType="centerCrop"
+        android:src="@drawable/i_test_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.171"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.336" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
