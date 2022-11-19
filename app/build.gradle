@@ -54,5 +54,52 @@ dependencies {
     implementation 'com.android.support:cardview-v7:28.0.0'
 
 
-
 }
+
+
+
+sceneform.asset('sampleData/model.obj',
+        'default',
+        'sampleData/model.sfa',
+        'src/main/assets/model')
+
+
+sceneform.asset('sampleData/bat.obj',
+        'default',
+        'sampleData/bat.sfa',
+        'src/main/assets/bat')
+
+sceneform.asset('sampleData/bear.obj',
+        'default',
+        'sampleData/bear.sfa',
+        'src/main/assets/bear')
+
+sceneform.asset('sampleData/lion.obj',
+        'default',
+        'sampleData/lion.sfa',
+        'src/main/assets/lion')
+
+sceneform.asset('sampleData/cat.obj',
+        'default',
+        'sampleData/cat.sfa',
+        'src/main/assets/cat')
+
+sceneform.asset('sampleData/table.obj',
+        'default',
+        'sampleData/table.sfa',
+        'src/main/assets/table')
+
+sceneform.asset('sampleData/chair.obj',
+        'default',
+        'sampleData/chair.sfa',
+        'src/main/assets/chair')
+
+sceneform.asset('sampleData/lamp.obj',
+        'default',
+        'sampleData/lamp.sfa',
+        'src/main/assets/lamp')
+
+sceneform.asset('sampleData/tv.obj',
+        'default',
+        'sampleData/tv.sfa',
+        'src/main/assets/tv')

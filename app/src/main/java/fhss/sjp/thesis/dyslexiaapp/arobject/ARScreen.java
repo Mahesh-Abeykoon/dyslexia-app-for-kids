@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.net.Uri;
 import android.os.Bundle;
 import android.widget.Button;
@@ -29,6 +30,7 @@ public class ARScreen extends AppCompatActivity {
     private ArrayList<String> modelName = new ArrayList<>();
     AnchorNode anchorNode;
 
+    @SuppressLint("NewApi")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,8 +40,8 @@ public class ARScreen extends AppCompatActivity {
         buttonRemove = (Button)findViewById(R.id.remove);
         getImgObject();
 
-        fragmentAR.setOnTapArPlaneListener((result, plane, moEvent) -> {
-            Anchor anchor = result.createAnchor();
+        fragmentAR.setOnTapArPlaneListener((hitResult, plane, motionEvent) -> {
+            Anchor anchor = hitResult.createAnchor();
             ModelRenderable.builder()
                     .setSource(this,Uri.parse(Function.modelsfb))
                     .build()
@@ -50,17 +52,39 @@ public class ARScreen extends AppCompatActivity {
 
     private void getImgObject() {
 
-        //animal icon
-        imagePath.add(R.drawable.app_icon);
-        imagePath.add(R.drawable.app_icon);
+        //animals icon
+        imagePath.add(R.drawable.bat);
+        imagePath.add(R.drawable.bear);
+        imagePath.add(R.drawable.lion);
+        imagePath.add(R.drawable.cat);
+        //items icon
+        imagePath.add(R.drawable.table);
+        imagePath.add(R.drawable.lamp);
+        imagePath.add(R.drawable.odltv);
+        imagePath.add(R.drawable.chair);
 
-        //animals
+        //animal
         namePath.add("Bat");
         namePath.add("Bear");
+        namePath.add("Lion");
+        namePath.add("Cat");
 
-        //sfb files
+        //items
+        namePath.add("Table");
+        namePath.add("Lamp");
+        namePath.add("Old Tv");
+        namePath.add("Chair");
+
+        //animal sfb
         modelName.add("bat.sfb");
         modelName.add("bear.sfb");
+        modelName.add("lion.sfb");
+        modelName.add("cat.sfb");
+        //items sfb
+        modelName.add("table.sfb");
+        modelName.add("lamp.sfb");
+        modelName.add("tv.sfb");
+        modelName.add("chair.sfb");
 
         initiateRecyclerview();
     }
