@@ -21,13 +21,13 @@
 
     <TextView
         android:id="@+id/ocrTextView0"
-        android:layout_width="250dp"
-        android:layout_height="77dp"
+        android:layout_width="298dp"
+        android:layout_height="86dp"
         android:layout_marginStart="52dp"
         android:layout_marginTop="4dp"
         android:fontFamily="@font/dyslexia"
-        android:text="Scan Words"
-        android:textSize="35dp"
+        android:text="SCAN WORDS"
+        android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
