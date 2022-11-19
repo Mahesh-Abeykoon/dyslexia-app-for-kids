@@ -15,6 +15,7 @@ import java.util.Random;
 import pl.droidsonroids.gif.GifImageView;
 
 public class Function {
+    public static String modelsfb = "model.sfb";
 
         public static ArrayList<Integer> rand_gen = new ArrayList<Integer>();
         static DigitalInkRecognitionModelIdentifier modelIdentifier = null;
