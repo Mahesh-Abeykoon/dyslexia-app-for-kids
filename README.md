@@ -3,7 +3,7 @@
 
 
 
-![screen-gif](https://github.com/Mahesh-Abeykoon/dyslexia-app-for-kids/master/more_screen.gif)
-![screen-gif](https://github.com/Mahesh-Abeykoon/dyslexia-app-for-kids/master/multimedia_screen.gif)
-![screen-gif](https://github.com/Mahesh-Abeykoon/dyslexia-app-for-kids/master/learn_screen.gif)
-![screen-gif](https://github.com/Mahesh-Abeykoon/dyslexia-app-for-kids/master/ar_screen.gif)
+![screen-gif](https://github.com/Mahesh-Abeykoon/dyslexia-app-for-kids/blobs/master/more_screen.gif)
+![screen-gif](https://github.com/Mahesh-Abeykoon/dyslexia-app-for-kids/blobs/master/multimedia_screen.gif)
+![screen-gif](https://github.com/Mahesh-Abeykoon/dyslexia-app-for-kids/blobs/master/learn_screen.gif)
+![screen-gif](https://github.com/Mahesh-Abeykoon/dyslexia-app-for-kids/blobs/master/ar_screen.gif)
