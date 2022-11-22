@@ -51,6 +51,7 @@
         android:fontFamily="@font/dyslexia"
         android:text="AR OBJECT"
         android:textSize="20dp"
+        android:onClick="openAugmentedRealityScreen"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

@@ -38,10 +38,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/dyslexia"
-        android:onClick="openWordPronunciationScreen"
+        android:onClick="openWordWriteScreen"
         android:text="READ WORDS"
         android:textSize="20dp"
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.765"
@@ -72,7 +71,6 @@
         android:layout_width="120dp"
         android:layout_height="141dp"
         android:background="@drawable/roundbutton"
-
         android:backgroundTint="@color/colorPrimaryDark"
         android:onClick="openWordWriteScreen"
         android:scaleType="fitCenter"
@@ -90,10 +88,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/dyslexia"
-        android:onClick="openWordPronunciationScreen"
+        android:onClick="openCamera"
         android:text="SCAN WORDS"
         android:textSize="20dp"
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.765"
@@ -107,7 +104,6 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/dyslexia"
         android:onClick="openWordPronunciationScreen"
-
         android:text="LISTEN SOUNDS"
         android:textSize="20dp"
 
