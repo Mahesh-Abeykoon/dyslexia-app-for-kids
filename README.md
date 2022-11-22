@@ -4,3 +4,6 @@
 
 
 ![screen-gif](https://github.com/Mahesh-Abeykoon/dyslexia-app-for-kids/blob/master/more_screen.gif)
+![screen-gif](https://github.com/Mahesh-Abeykoon/dyslexia-app-for-kids/blob/master/multimedia_screen.gif)
+![screen-gif](https://github.com/Mahesh-Abeykoon/dyslexia-app-for-kids/blob/master/learn_screen.gif)
+![screen-gif](https://github.com/Mahesh-Abeykoon/dyslexia-app-for-kids/blob/master/ar_screen.gif)
